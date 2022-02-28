@@ -1,0 +1,3 @@
+package syntetictracegenerator;
+
+@license(LGPL);

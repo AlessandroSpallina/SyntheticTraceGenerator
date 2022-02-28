@@ -1,0 +1,735 @@
+file 12076953 1645746257                                        
+version 3
+run General-0-20220225-00:43:00-571726
+attr configname General
+attr datetime 20220225-00:43:00
+attr datetimef 20220225-004300
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network syntetictracegenerator.simulations.Villarosa.DummyScenario
+attr processid 571726
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../images:../../../inet4.3/images:../../../Simu5G/images:../../../veins/subprojects/veins_inet/images:../../../veins/images
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config image-path ../../images
+config network syntetictracegenerator.simulations.Villarosa.DummyScenario
+config debug-on-errors false
+config print-undisposed false
+config **.sctp.**.scalar-recording false
+config **.sctp.**.vector-recording false
+config **.routingRecorder.enabled false
+config *.playgroundSizeX 20000m
+config *.playgroundSizeY 20000m
+config *.playgroundSizeZ 50m
+config *.veinsManager.host "\"localhost\""
+config *.veinsManager.moduleType "\"simu5g.nodes.cars.NRCar\""
+config *.veinsManager.moduleName "\"car\""
+config *.veinsManager.launchConfig "xmldoc(\"heterogeneous.launchd.xml\")"
+config *.veinsManager.updateInterval 0.1s
+config *.car[*].mobilityType "\"VeinsInetMobility\""
+config **.numBands 25
+config **.ueTxPower 26
+config **.eNodeBTxPower 46
+config *.car[*].cellularNic.nrPhy.dynamicCellAssociation true
+config *.car[*].masterId 0
+config *.car[*].macCellId 0
+config *.car[*].nrMasterId 1
+config *.car[*].nrMacCellId 1
+config **.gNodeB1.macCellId 1
+config **.gNodeB1.macNodeId 1
+config **.gNodeB2.macCellId 2
+config **.gNodeB2.macNodeId 2
+config *.car[*].cellularNic.nrPhy.enableHandover true
+config *.gNodeB*.cellularNic.phy.enableHandover true
+config *.gNodeB*.cellularNic.phy.handoverLatency 50ms
+config *.gNodeB*.cellInfo.broadcastMessageInterval 1s
+config *.gNodeB*.numX2Apps 2
+config *.gNodeB*.x2App[*].server.localPort "5000 + ancestorIndex(1)"
+config *.gNodeB1.x2App[0].client.connectAddress "\"gNodeB2%x2ppp0\""
+config *.gNodeB1.x2App[1].client.connectAddress "\"gNodeB3%x2ppp0\""
+config *.gNodeB2.x2App[0].client.connectAddress "\"gNodeB1%x2ppp0\""
+config *.gNodeB2.x2App[1].client.connectAddress "\"gNodeB3%x2ppp0\""
+config *.gNodeB3.x2App[0].client.connectAddress "\"gNodeB1%x2ppp0\""
+config *.gNodeB3.x2App[1].client.connectAddress "\"gNodeB2%x2ppp0\""
+config **.sctp.nagleEnabled false
+config **.sctp.enableHeartbeats false
+
+vector 0 DummyScenario.router.ppp[0].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 1 DummyScenario.router.ppp[1].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 2 DummyScenario.router.ppp[2].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 3 DummyScenario.upf.ppp[0].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 4 DummyScenario.upf.ppp[1].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 5 DummyScenario.upf.ppp[2].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 6 DummyScenario.upf.pppIf.ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 7 DummyScenario.gNodeB1.pppIf.ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 8 DummyScenario.gNodeB1.x2ppp[0].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 9 DummyScenario.gNodeB1.x2ppp[1].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 10 DummyScenario.gNodeB1.pppMEHostIf.ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 11 DummyScenario.gNodeB2.pppIf.ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 12 DummyScenario.gNodeB2.x2ppp[0].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 13 DummyScenario.gNodeB2.x2ppp[1].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 14 DummyScenario.gNodeB2.pppMEHostIf.ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 15 DummyScenario.gNodeB3.pppIf.ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 16 DummyScenario.gNodeB3.x2ppp[0].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 17 DummyScenario.gNodeB3.x2ppp[1].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 18 DummyScenario.gNodeB3.pppMEHostIf.ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 19 DummyScenario.mecHost.virtualisationInfrastructure.pppIf[0].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 20 DummyScenario.mecHost.virtualisationInfrastructure.pppIf[1].ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 21 DummyScenario.mecHost.gtpEndpoint.pppIf.ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 22 DummyScenario.ualcmp.pppIf.ppp transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "tx state, vector"
+vector 23 DummyScenario.gNodeB1.x2ppp[0].ppp rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 24 DummyScenario.gNodeB1.x2ppp[0].ppp.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 25 DummyScenario.gNodeB1.x2ppp[0].ppp.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr source "warmup(count(packetPushed) - count(packetPulled) - count(packetRemoved) - count(packetDropped))"
+attr title "queue length, vector"
+attr type int
+vector 26 DummyScenario.gNodeB1.x2ppp[0].ppp.queue packetPulled:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pulled, vector(packetBytes)"
+vector 27 DummyScenario.gNodeB1.x2ppp[0].ppp.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPulled)
+attr title "queueing times, vector"
+attr unit s
+vector 28 DummyScenario.gNodeB1.x2ppp[0].ppp txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, vector(packetBytes)"
+vector 29 DummyScenario.gNodeB1.x2ppp[1].ppp rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 30 DummyScenario.gNodeB1.x2ppp[1].ppp.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 31 DummyScenario.gNodeB1.x2ppp[1].ppp.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr source "warmup(count(packetPushed) - count(packetPulled) - count(packetRemoved) - count(packetDropped))"
+attr title "queue length, vector"
+attr type int
+vector 32 DummyScenario.gNodeB1.x2ppp[1].ppp.queue packetPulled:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pulled, vector(packetBytes)"
+vector 33 DummyScenario.gNodeB1.x2ppp[1].ppp.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPulled)
+attr title "queueing times, vector"
+attr unit s
+vector 34 DummyScenario.gNodeB1.x2ppp[1].ppp txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, vector(packetBytes)"
+vector 35 DummyScenario.gNodeB2.x2ppp[0].ppp rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 36 DummyScenario.gNodeB2.x2ppp[0].ppp.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 37 DummyScenario.gNodeB2.x2ppp[0].ppp.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr source "warmup(count(packetPushed) - count(packetPulled) - count(packetRemoved) - count(packetDropped))"
+attr title "queue length, vector"
+attr type int
+vector 38 DummyScenario.gNodeB2.x2ppp[0].ppp.queue packetPulled:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pulled, vector(packetBytes)"
+vector 39 DummyScenario.gNodeB2.x2ppp[0].ppp.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPulled)
+attr title "queueing times, vector"
+attr unit s
+vector 40 DummyScenario.gNodeB2.x2ppp[0].ppp txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, vector(packetBytes)"
+vector 41 DummyScenario.gNodeB2.x2ppp[1].ppp rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 42 DummyScenario.gNodeB2.x2ppp[1].ppp.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 43 DummyScenario.gNodeB2.x2ppp[1].ppp.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr source "warmup(count(packetPushed) - count(packetPulled) - count(packetRemoved) - count(packetDropped))"
+attr title "queue length, vector"
+attr type int
+vector 44 DummyScenario.gNodeB2.x2ppp[1].ppp.queue packetPulled:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pulled, vector(packetBytes)"
+vector 45 DummyScenario.gNodeB2.x2ppp[1].ppp.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPulled)
+attr title "queueing times, vector"
+attr unit s
+vector 46 DummyScenario.gNodeB2.x2ppp[1].ppp txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, vector(packetBytes)"
+vector 47 DummyScenario.gNodeB3.x2ppp[1].ppp rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 48 DummyScenario.gNodeB3.x2ppp[1].ppp.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 49 DummyScenario.gNodeB3.x2ppp[1].ppp.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr source "warmup(count(packetPushed) - count(packetPulled) - count(packetRemoved) - count(packetDropped))"
+attr title "queue length, vector"
+attr type int
+vector 50 DummyScenario.gNodeB3.x2ppp[1].ppp.queue packetPulled:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pulled, vector(packetBytes)"
+vector 51 DummyScenario.gNodeB3.x2ppp[1].ppp.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPulled)
+attr title "queueing times, vector"
+attr unit s
+vector 52 DummyScenario.gNodeB3.x2ppp[1].ppp txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, vector(packetBytes)"
+vector 53 DummyScenario.gNodeB3.x2ppp[0].ppp rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 54 DummyScenario.gNodeB3.x2ppp[0].ppp.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 55 DummyScenario.gNodeB3.x2ppp[0].ppp.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr source "warmup(count(packetPushed) - count(packetPulled) - count(packetRemoved) - count(packetDropped))"
+attr title "queue length, vector"
+attr type int
+vector 56 DummyScenario.gNodeB3.x2ppp[0].ppp.queue packetPulled:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pulled, vector(packetBytes)"
+vector 57 DummyScenario.gNodeB3.x2ppp[0].ppp.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPulled)
+attr title "queueing times, vector"
+attr unit s
+vector 58 DummyScenario.gNodeB3.x2ppp[0].ppp txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, vector(packetBytes)"
+vector 59 DummyScenario.gNodeB2.x2ppp[0].ppp rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, vector(packetBytes)"
+vector 60 DummyScenario.gNodeB2.x2ppp[0].ppp passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 61 DummyScenario.gNodeB3.x2ppp[1].ppp rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, vector(packetBytes)"
+vector 62 DummyScenario.gNodeB3.x2ppp[1].ppp passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 63 DummyScenario.gNodeB1.x2ppp[0].ppp rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, vector(packetBytes)"
+vector 64 DummyScenario.gNodeB1.x2ppp[0].ppp passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 65 DummyScenario.gNodeB3.x2ppp[0].ppp rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, vector(packetBytes)"
+vector 66 DummyScenario.gNodeB3.x2ppp[0].ppp passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 67 DummyScenario.gNodeB1.x2ppp[1].ppp rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, vector(packetBytes)"
+vector 68 DummyScenario.gNodeB1.x2ppp[1].ppp passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 69 DummyScenario.gNodeB2.x2ppp[1].ppp rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, vector(packetBytes)"
+vector 70 DummyScenario.gNodeB2.x2ppp[1].ppp passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 71 DummyScenario.gNodeB1.cellularNic.mac avgServedBlocksUl:vector ETV
+attr source avgServedBlocksUl
+attr title "LTE Avg Served Blocks Ul, vector"
+attr unit blocks
+vector 72 DummyScenario.gNodeB1.cellularNic.mac avgServedBlocksDl:vector ETV
+attr source avgServedBlocksDl
+attr title "LTE Avg Served Blocks Dl, vector"
+attr unit blocks
+vector 73 DummyScenario.gNodeB2.cellularNic.mac avgServedBlocksUl:vector ETV
+attr source avgServedBlocksUl
+attr title "LTE Avg Served Blocks Ul, vector"
+attr unit blocks
+vector 74 DummyScenario.gNodeB2.cellularNic.mac avgServedBlocksDl:vector ETV
+attr source avgServedBlocksDl
+attr title "LTE Avg Served Blocks Dl, vector"
+attr unit blocks
+vector 75 DummyScenario.gNodeB3.cellularNic.mac avgServedBlocksUl:vector ETV
+attr source avgServedBlocksUl
+attr title "LTE Avg Served Blocks Ul, vector"
+attr unit blocks
+vector 76 DummyScenario.gNodeB3.cellularNic.mac avgServedBlocksDl:vector ETV
+attr source avgServedBlocksDl
+attr title "LTE Avg Served Blocks Dl, vector"
+attr unit blocks
+vector 77 DummyScenario.car[0].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 78 DummyScenario.car[0].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 79 DummyScenario.car[0].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 80 DummyScenario.car[0].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+vector 81 DummyScenario.gNodeB1.cellularNic.mac receivedPacketFromLowerLayer:vector(packetBytes) ETV
+attr interpolationmode none
+attr source receivedPacketFromLowerLayer
+vector 82 DummyScenario.gNodeB2.x2App[0].client packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 83 DummyScenario.gNodeB1.x2App[0].client packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 84 DummyScenario.gNodeB2.cellularNic.mac receivedPacketFromLowerLayer:vector(packetBytes) ETV
+attr interpolationmode none
+attr source receivedPacketFromLowerLayer
+vector 85 DummyScenario.car[1].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 86 DummyScenario.car[1].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 87 DummyScenario.car[1].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 88 DummyScenario.car[1].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+vector 89 DummyScenario.car[2].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 90 DummyScenario.car[2].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 91 DummyScenario.car[2].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 92 DummyScenario.car[2].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+vector 93 DummyScenario.car[3].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 94 DummyScenario.car[3].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 95 DummyScenario.car[3].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 96 DummyScenario.car[3].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+vector 97 DummyScenario.car[4].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 98 DummyScenario.car[4].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 99 DummyScenario.car[4].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 100 DummyScenario.car[4].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+71	21460 596960 234 436730 0.001 32.768 32768 0 0 0 0
+72	618420 596960 234 436730 0.001 32.768 32768 0 0 0 0
+73	1215380 596960 235 436731 0.001 32.768 32768 0 0 0 0
+74	1812340 596960 235 436731 0.001 32.768 32768 0 0 0 0
+75	2409300 596961 236 436732 0.001 32.768 32768 0 0 0 0
+76	3006261 596961 236 436732 0.001 32.768 32768 0 0 0 0
+vector 101 DummyScenario.car[5].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 102 DummyScenario.car[5].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 103 DummyScenario.car[5].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 104 DummyScenario.car[5].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+vector 105 DummyScenario.car[6].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 106 DummyScenario.car[6].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 107 DummyScenario.car[6].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 108 DummyScenario.car[6].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+vector 109 DummyScenario.car[7].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 110 DummyScenario.car[7].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 111 DummyScenario.car[7].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 112 DummyScenario.car[7].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+85	3605364 15 70479 70479 8.1 8.1 1 0 0 0 0
+86	3605379 76 70479 191637 8.1 18.05001 4 1 2 6 10
+87	3605455 260636 70512 993454 8.102 56.096 8000 -0.034576771816813 30.277882205646 98348.296024477 1518720.635387
+88	3866091 260479 70512 993454 8.102 56.096 8000 17.3069226962 45.824116781315 229806.38000943 6913404.1010252
+84	4126570 613152 17855 998794 2.052 56.312 32768 1 1 32768 32768
+vector 113 DummyScenario.car[8].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 114 DummyScenario.car[8].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 115 DummyScenario.car[8].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 116 DummyScenario.car[8].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+vector 117 DummyScenario.gNodeB3.x2App[1].client packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 118 DummyScenario.gNodeB2.x2App[1].client packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 119 DummyScenario.gNodeB3.cellularNic.mac receivedPacketFromLowerLayer:vector(packetBytes) ETV
+attr interpolationmode none
+attr source receivedPacketFromLowerLayer
+89	4740995 17 150096 150096 15.1 15.1 1 0 0 0 0
+90	4741012 122 150096 937364 15.1 54.05001 6 1 2 9 15
+91	4741134 268472 150138 1210152 15.102 64.098 8167 -0.080298620764422 31.920348770229 131420.06017948 2597554.0458054
+92	5009606 267973 150138 1210152 15.102 64.098 8167 17.225259937247 49.068922057711 260077.39127722 8771309.6068056
+vector 120 DummyScenario.car[9].cellularNic.phy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 121 DummyScenario.car[9].cellularNic.nrPhy servingCell:vector ETV
+attr source servingCell
+attr title "ID of the serving eNodeB for the UE, vector"
+attr unit ""
+vector 122 DummyScenario.car[9].cellularNic.nrChannelModel[0] measuredSinrUl:vector ETV
+attr source measuredSinrUl
+attr title "SINR measured at feedback computation, UL, vector"
+attr unit dB
+vector 123 DummyScenario.car[9].cellularNic.nrChannelModel[0] measuredSinrDl:vector ETV
+attr source measuredSinrDl
+attr title "SINR measured at feedback computation, DL, vector"
+attr unit dB
+vector 124 DummyScenario.gNodeB3.x2App[0].client packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 125 DummyScenario.gNodeB1.x2App[1].client packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+101	5278681 18 501338 501338 36.1 36.1 1 0 0 0 0
+102	5278699 41 501338 1126561 36.1 61.05001 2 1 2 3 5
+103	5278740 165336 501405 1237491 36.102 65.094 4833 -9.8323029499016 23.15773950318 53437.710815063 864047.31566006
+104	5444076 163702 501405 1237491 36.102 65.094 4833 9.4939163071203 39.568032237155 130276.79273466 3790069.3922419
+71	5607778 628096 436751 1248405 32.769 65.536 32768 0 0 0 0
+72	6235874 628096 436751 1248405 32.769 65.536 32768 0 0 0 0
+73	6863970 628096 436752 1248406 32.769 65.536 32768 0 0 0 0
+74	7492066 628096 436752 1248406 32.769 65.536 32768 0 0 0 0
+75	8120162 628096 436753 1248407 32.769 65.536 32768 0 0 0 0
+76	8748258 628096 436753 1248407 32.769 65.536 32768 0 0 0 0
+0	9376354 8 0 0 0 0 1 0 0 0 0
+1	9376362 8 0 0 0 0 1 0 0 0 0
+2	9376370 8 0 0 0 0 1 0 0 0 0
+3	9376378 8 0 0 0 0 1 0 0 0 0
+4	9376386 8 0 0 0 0 1 0 0 0 0
+5	9376394 8 0 0 0 0 1 0 0 0 0
+6	9376402 8 0 0 0 0 1 0 0 0 0
+7	9376410 8 0 0 0 0 1 0 0 0 0
+8	9376418 1612 0 1132053 0 61.2500101508 71 0 1 35 35
+9	9378030 261 0 1236288 0 65.0500101508 13 0 1 6 6
+10	9378291 9 0 0 0 0 1 0 0 0 0
+11	9378300 9 0 0 0 0 1 0 0 0 0
+12	9378309 1683 0 1130682 0 61.2000101508 71 0 1 35 35
+13	9379992 274 0 1154032 0 62.0500101508 13 0 1 6 6
+14	9380266 9 0 0 0 0 1 0 0 0 0
+15	9380275 9 0 0 0 0 1 0 0 0 0
+16	9380284 274 0 1154021 0 62.0500100568 13 0 1 6 6
+17	9380558 274 0 1236277 0 65.0500100568 13 0 1 6 6
+18	9380832 9 0 0 0 0 1 0 0 0 0
+19	9380841 9 0 0 0 0 1 0 0 0 0
+20	9380850 9 0 0 0 0 1 0 0 0 0
+21	9380859 9 0 0 0 0 1 0 0 0 0
+22	9380868 9 0 0 0 0 1 0 0 0 0
+23	9380877 830 66 1132052 0 61.2500101068 35 36 180 2176 157248
+24	9381707 830 66 1132052 0 61.2500101068 35 36 180 2176 157248
+25	9382537 1584 66 1132052 0 61.2500101068 70 0 1 35 35
+26	9384121 830 66 1132052 0 61.2500101068 35 36 180 2176 157248
+27	9384951 792 66 1132052 0 61.2500101068 35 0 0 0 0
+28	9385743 830 66 1132052 0 61.2500101068 35 43 187 2421 189427
+29	9386573 134 67 1236284 0 65.0500101068 6 36 180 544 63552
+30	9386707 134 67 1236284 0 65.0500101068 6 36 180 544 63552
+31	9386841 250 67 1236284 0 65.0500101068 12 0 1 6 6
+32	9387091 134 67 1236284 0 65.0500101068 6 36 180 544 63552
+33	9387225 125 67 1236284 0 65.0500101068 6 0 0 0 0
+34	9387350 134 67 1236284 0 65.0500101068 6 43 187 586 71462
+35	9387484 830 68 1130681 0 61.2000101068 35 36 180 2176 157248
+36	9388314 830 68 1130681 0 61.2000101068 35 36 180 2176 157248
+37	9389144 1584 68 1130681 0 61.2000101068 70 0 1 35 35
+38	9390728 830 68 1130681 0 61.2000101068 35 36 180 2176 157248
+39	9391558 792 68 1130681 0 61.2000101068 35 0 0 0 0
+40	9392350 830 68 1130681 0 61.2000101068 35 43 187 2421 189427
+41	9393180 134 69 1154028 0 62.0500101068 6 36 180 544 63552
+42	9393314 134 69 1154028 0 62.0500101068 6 36 180 544 63552
+43	9393448 250 69 1154028 0 62.0500101068 12 0 1 6 6
+44	9393698 134 69 1154028 0 62.0500101068 6 36 180 544 63552
+45	9393832 125 69 1154028 0 62.0500101068 6 0 0 0 0
+46	9393957 134 69 1154028 0 62.0500101068 6 43 187 586 71462
+47	9394091 134 70 1236275 0 65.05001 6 36 180 544 63552
+48	9394225 134 70 1236275 0 65.05001 6 36 180 544 63552
+49	9394359 250 70 1236275 0 65.05001 12 0 1 6 6
+50	9394609 134 70 1236275 0 65.05001 6 36 180 544 63552
+51	9394743 125 70 1236275 0 65.05001 6 0 0 0 0
+52	9394868 134 70 1236275 0 65.05001 6 43 187 586 71462
+53	9395002 134 71 1154019 0 62.05001 6 36 180 544 63552
+54	9395136 134 71 1154019 0 62.05001 6 36 180 544 63552
+55	9395270 250 71 1154019 0 62.05001 12 0 1 6 6
+56	9395520 134 71 1154019 0 62.05001 6 36 180 544 63552
+57	9395654 125 71 1154019 0 62.05001 6 0 0 0 0
+58	9395779 134 71 1154019 0 62.05001 6 43 187 586 71462
+59	9395913 920 84 1132054 0.0000001356 61.2500102008 35 43 187 2421 189427
+60	9396833 920 84 1132054 0.0000001356 61.2500102008 35 36 180 2176 157248
+61	9397753 149 85 1236289 0.0000001356 65.0500102008 6 43 187 586 71462
+62	9397902 149 85 1236289 0.0000001356 65.0500102008 6 36 180 544 63552
+63	9398051 920 86 1130683 0.0000001356 61.2000102008 35 43 187 2421 189427
+64	9398971 920 86 1130683 0.0000001356 61.2000102008 35 36 180 2176 157248
+65	9399891 149 87 1154033 0.0000001356 62.0500102008 6 43 187 586 71462
+66	9400040 149 87 1154033 0.0000001356 62.0500102008 6 36 180 544 63552
+67	9400189 149 88 1236278 0.0000001356 65.0500101068 6 43 187 586 71462
+68	9400338 149 88 1236278 0.0000001356 65.0500101068 6 36 180 544 63552
+69	9400487 149 89 1154022 0.0000001356 62.0500101068 6 43 187 586 71462
+70	9400636 149 89 1154022 0.0000001356 62.0500101068 6 36 180 544 63552
+71	9400785 11992 1248433 1263341 65.537 66.139 603 0 0 0 0
+72	9412777 11992 1248433 1263341 65.537 66.139 603 0 0 0 0
+73	9424769 11992 1248434 1263342 65.537 66.139 603 0 0 0 0
+74	9436761 11992 1248434 1263342 65.537 66.139 603 0 0 0 0
+75	9448753 11992 1248435 1263343 65.537 66.139 603 0 0 0 0
+76	9460745 11992 1248435 1263343 65.537 66.139 603 0 0 0 0
+77	9472737 13 831 831 0.1 0.1 1 0 0 0 0
+78	9472750 72 831 219762 0.1 20.05001 4 1 2 6 10
+79	9472822 357819 856 1263321 0.102 66.138 11007 -1.8001355029546 24.758032636243 140703.23119341 2103679.2981842
+80	9830641 357471 856 1263321 0.102 66.138 11007 15.831657248654 40.805376116181 320351.62932442 9649609.2080174
+81	10188112 202429 857 1263324 0.102 66.138 10770 1 1 10770 10770
+82	10390541 427 17372 1125185 2.0000101068 61.0000101068 16 15 15 240 3600
+83	10390968 427 17830 1126574 2.0500101068 61.0500101068 16 15 15 240 3600
+84	10391395 187430 998796 1263322 56.312 66.138 9480 1 1 9480 9480
+93	10578825 17 248562 248562 22.1 22.1 1 0 0 0 0
+94	10578842 38 248562 264471 22.1 23.05001 2 1 2 3 5
+95	10578880 248702 248609 1263271 22.102 66.136 7340 -21.124697655351 13.124584063166 -46617.886077292 597726.59961005
+96	10827582 240870 248609 1263271 22.102 66.136 7340 -3.9277044335922 30.660064002045 83551.73319594 1256347.4159243
+97	11068452 17 365595 365595 29.1 29.1 1 0 0 0 0
+98	11068469 60 365595 1154014 29.1 62.05001 3 1 3 6 14
+99	11068529 204107 365653 1263222 29.102 66.134 6173 -3.1226565273911 19.780986495445 58946.62600548 724808.60240752
+100	11272636 208963 365653 1263222 29.102 66.134 6173 15.872113641146 36.10911197313 171943.86602259 4945859.1643065
+105	11481599 18 655744 655744 43.1 43.1 1 0 0 0 0
+106	11481617 40 655744 679296 43.1 44.05001 2 1 2 3 5
+107	11481657 131310 655816 1263273 43.102 66.136 3840 2.5350779846082 29.917636728316 56545.237391814 976716.53331863
+108	11612967 130986 655816 1263273 43.102 66.136 3840 19.44183727249 46.58169780699 127688.8629642 4394488.9523672
+109	11743953 18 829026 829026 50.1 50.1 1 0 0 0 0
+110	11743971 40 829026 855107 50.1 51.05001 2 1 2 3 5
+111	11744011 91735 829109 1263224 50.102 66.134 2673 -0.86312628568362 20.477124999752 32147.998873737 455253.772532
+112	11835746 91581 829109 1263224 50.102 66.134 2673 15.94963686172 37.665411250495 77165.503315803 2296643.8890586
+113	11927327 19 1018268 1018268 57.1 57.1 1 0 0 0 0
+114	11927346 19 1018268 1018268 57.1 57.1 1 1 1 1 1
+115	11927365 51910 1018353 1263323 57.102 66.138 1507 2.8608550684283 21.978192564842 18341.535378325 261763.68683755
+116	11979275 52053 1018353 1263323 57.102 66.138 1507 21.240832779283 39.46878251539 48088.214212588 1573023.3795015
+117	12031328 29 1152637 1152637 62.0000101068 62.0000101068 1 15 15 15 225
+118	12031357 29 1154029 1154029 62.0500101068 62.0500101068 1 15 15 15 225
+119	12031386 17911 1154143 1263276 62.054 66.136 862 1 1 862 862
+120	12049297 19 1210182 1210182 64.1 64.1 1 0 0 0 0
+121	12049316 42 1210182 1236270 64.1 65.05001 2 1 3 4 10
+122	12049358 11818 1210264 1263275 64.102 66.136 340 -1.4939641768213 25.035864036853 2677.1735188496 33144.889932092
+123	12061176 11824 1210264 1263275 64.102 66.136 340 20.202251093647 43.988137131608 9704.3486825018 291885.84210774
+124	12073000 29 1234891 1234891 65.0000101068 65.0000101068 1 15 15 15 225
+125	12073029 29 1236285 1236285 65.0500101068 65.0500101068 1 15 15 15 225
+71	12073058 338 1263364 1263759 66.14 66.156 17 0 0 0 0
+72	12073396 338 1263364 1263759 66.14 66.156 17 0 0 0 0
+73	12073734 338 1263365 1263760 66.14 66.156 17 0 0 0 0
+74	12074072 338 1263365 1263760 66.14 66.156 17 0 0 0 0
+75	12074410 338 1263366 1263761 66.14 66.156 17 0 0 0 0
+76	12074748 338 1263366 1263761 66.14 66.156 17 0 0 0 0
+79	12075086 107 1263469 1263765 66.144 66.156 3 -0.56058352005277 -0.56058352005277 -1.6817505601583 0.94276164886426
+80	12075193 101 1263469 1263765 66.144 66.156 3 16.066644424126 16.066644424126 48.199933272379 774.41118915392
+81	12075294 59 1263472 1263768 66.144 66.156 3 1 1 3 3
+84	12075353 238 1263373 1263766 66.14 66.156 12 1 1 12 12
+95	12075591 102 1263419 1263715 66.142 66.154 3 2.8389383072136 2.8389383072136 8.5168149216408 24.178712136495
+96	12075693 102 1263419 1263715 66.142 66.154 3 20.590540472594 20.590540472594 61.771621417782 1271.9110708606
+99	12075795 101 1263370 1263666 66.14 66.152 3 9.7614101668099 9.7614101668099 29.28423050043 285.8553853341
+100	12075896 104 1263370 1263666 66.14 66.152 3 26.608006746276 26.608006746276 79.824020238829 2123.9580690297
+107	12076000 105 1263421 1263717 66.142 66.154 3 19.779468243188 19.779468243188 59.338404729565 1173.6820919499
+108	12076105 105 1263421 1263717 66.142 66.154 3 38.384027110835 38.384027110835 115.1520813325 4420.0006117359
+111	12076210 104 1263372 1263668 66.14 66.152 3 2.2566370853296 2.2566370853296 6.7699112559887 15.277232804654
+112	12076314 104 1263372 1263668 66.14 66.152 3 19.040238980301 19.040238980301 57.120716940903 1087.5921012809
+115	12076418 104 1263471 1263767 66.144 66.156 3 2.8608550684283 2.8608550684283 8.5825652052849 24.553475167656
+116	12076522 101 1263471 1263767 66.144 66.156 3 22.62493353403 22.62493353403 67.87480060209 1535.6628522578
+119	12076623 125 1263371 1263720 66.14 66.154 6 1 1 6 6
+122	12076748 99 1263423 1263719 66.142 66.154 3 22.6034538422 22.6034538422 67.8103615266 1532.7483767894
+123	12076847 105 1263423 1263719 66.142 66.154 3 43.988137131608 43.988137131608 131.96441139482 5804.8686249275
+

@@ -1,0 +1,146 @@
++R #0  0s  ExtraDummyMultiCell5G.router  10.0.0.9  127.0.0.0/8  <unspec>  lo0
++R #0  0s  ExtraDummyMultiCell5G.router  10.0.0.9  10.0.0.0/30  <unspec>  ppp0
++R #0  0s  ExtraDummyMultiCell5G.router  10.0.0.9  10.0.0.4/30  <unspec>  ppp1
++R #0  0s  ExtraDummyMultiCell5G.router  10.0.0.9  10.0.0.8/30  <unspec>  ppp2
++R #0  0s  ExtraDummyMultiCell5G.upf  10.0.0.25  127.0.0.0/8  <unspec>  lo0
++R #0  0s  ExtraDummyMultiCell5G.upf  10.0.0.25  10.0.0.12/30  <unspec>  ppp0
++R #0  0s  ExtraDummyMultiCell5G.upf  10.0.0.25  10.0.0.16/30  <unspec>  ppp1
++R #0  0s  ExtraDummyMultiCell5G.upf  10.0.0.25  10.0.0.20/30  <unspec>  ppp2
++R #0  0s  ExtraDummyMultiCell5G.upf  10.0.0.25  10.0.0.24/30  <unspec>  ppp3
++R #0  0s  ExtraDummyMultiCell5G.upf  10.0.0.25  10.0.0.0/30  <unspec>  pppIf
++R #0  0s  ExtraDummyMultiCell5G.gNodeB1  10.0.0.45  10.0.0.32/29  <unspec>  wlan
++R #0  0s  ExtraDummyMultiCell5G.gNodeB1  10.0.0.45  10.0.0.12/30  <unspec>  pppIf
++R #0  0s  ExtraDummyMultiCell5G.gNodeB1  10.0.0.45  10.0.0.28/30  <unspec>  x2ppp0
++R #0  0s  ExtraDummyMultiCell5G.gNodeB1  10.0.0.45  10.0.0.40/30  <unspec>  x2ppp1
++R #0  0s  ExtraDummyMultiCell5G.gNodeB1  10.0.0.45  10.0.0.44/30  <unspec>  pppMEHostIf
++R #0  0s  ExtraDummyMultiCell5G.gNodeB2  10.0.0.53  10.0.0.32/29  <unspec>  wlan
++R #0  0s  ExtraDummyMultiCell5G.gNodeB2  10.0.0.53  10.0.0.16/30  <unspec>  pppIf
++R #0  0s  ExtraDummyMultiCell5G.gNodeB2  10.0.0.53  10.0.0.28/30  <unspec>  x2ppp0
++R #0  0s  ExtraDummyMultiCell5G.gNodeB2  10.0.0.53  10.0.0.48/30  <unspec>  x2ppp1
++R #0  0s  ExtraDummyMultiCell5G.gNodeB2  10.0.0.53  10.0.0.52/30  <unspec>  pppMEHostIf
++R #0  0s  ExtraDummyMultiCell5G.gNodeB3  10.0.0.61  10.0.0.32/29  <unspec>  wlan
++R #0  0s  ExtraDummyMultiCell5G.gNodeB3  10.0.0.61  10.0.0.20/30  <unspec>  pppIf
++R #0  0s  ExtraDummyMultiCell5G.gNodeB3  10.0.0.61  10.0.0.56/30  <unspec>  x2ppp0
++R #0  0s  ExtraDummyMultiCell5G.gNodeB3  10.0.0.61  10.0.0.40/30  <unspec>  x2ppp1
++R #0  0s  ExtraDummyMultiCell5G.gNodeB3  10.0.0.61  10.0.0.60/30  <unspec>  pppMEHostIf
++R #0  0s  ExtraDummyMultiCell5G.gNodeB4  10.0.0.65  10.0.0.32/29  <unspec>  wlan
++R #0  0s  ExtraDummyMultiCell5G.gNodeB4  10.0.0.65  10.0.0.24/30  <unspec>  pppIf
++R #0  0s  ExtraDummyMultiCell5G.gNodeB4  10.0.0.65  10.0.0.48/30  <unspec>  x2ppp0
++R #0  0s  ExtraDummyMultiCell5G.gNodeB4  10.0.0.65  10.0.0.56/30  <unspec>  x2ppp1
++R #0  0s  ExtraDummyMultiCell5G.gNodeB4  10.0.0.65  10.0.0.64/30  <unspec>  pppMEHostIf
++R #0  0s  ExtraDummyMultiCell5G.mecHost.virtualisationInfrastructure  10.0.0.73  10.0.0.8/30  <unspec>  pppIf0
++R #0  0s  ExtraDummyMultiCell5G.mecHost.virtualisationInfrastructure  10.0.0.73  10.0.0.68/30  <unspec>  pppIf1
++R #0  0s  ExtraDummyMultiCell5G.mecHost.virtualisationInfrastructure  10.0.0.73  10.0.0.72/30  <unspec>  eth
++R #0  0s  ExtraDummyMultiCell5G.mecHost.mecPlatform  10.0.0.74  127.0.0.0/8  <unspec>  lo0
++R #0  0s  ExtraDummyMultiCell5G.mecHost.mecPlatform  10.0.0.74  10.0.0.72/30  <unspec>  mp1Eth
++R #0  0s  ExtraDummyMultiCell5G.mecHost.gtpEndpoint  10.0.0.70  127.0.0.0/8  <unspec>  lo0
++R #0  0s  ExtraDummyMultiCell5G.mecHost.gtpEndpoint  10.0.0.70  10.0.0.68/30  <unspec>  pppIf
++R #0  0s  ExtraDummyMultiCell5G.ualcmp  10.0.0.6  10.0.0.4/30  <unspec>  pppIf
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  cellularNic <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
++I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
++I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan 10.0.2.142
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan 10.0.2.142
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan 10.0.2.142
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan 10.0.2.142
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan 10.0.2.142
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan 10.0.2.142
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan 10.0.2.142
++R #1094  0.1s  ExtraDummyMultiCell5G.car[0]  10.0.2.142  <unspec>/0  <unspec>  wlan
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[0]  wlan 10.0.2.142
++R #1094  0.1s  ExtraDummyMultiCell5G.car[0]  10.0.2.142  10.0.0.0/8  <unspec>  wlan
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  cellularNic <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
++I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
++I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  lo0 <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan <unspec>
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan 10.0.2.193
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan 10.0.2.193
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan 10.0.2.193
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan 10.0.2.193
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan 10.0.2.193
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan 10.0.2.193
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan 10.0.2.193
++R #1094  0.1s  ExtraDummyMultiCell5G.car[1]  10.0.2.193  <unspec>/0  <unspec>  wlan
+*I  #1094  0.1s  ExtraDummyMultiCell5G.car[1]  wlan 10.0.2.193
++R #1094  0.1s  ExtraDummyMultiCell5G.car[1]  10.0.2.193  10.0.0.0/8  <unspec>  wlan
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  lo0 <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  cellularNic <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
++I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  lo0 <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  lo0 <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  lo0 <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
++I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  lo0 <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan <unspec>
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan 10.0.2.244
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan 10.0.2.244
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan 10.0.2.244
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan 10.0.2.244
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan 10.0.2.244
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan 10.0.2.244
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan 10.0.2.244
++R #69161  5.2s  ExtraDummyMultiCell5G.car[2]  10.0.2.244  <unspec>/0  <unspec>  wlan
+*I  #69161  5.2s  ExtraDummyMultiCell5G.car[2]  wlan 10.0.2.244
++R #69161  5.2s  ExtraDummyMultiCell5G.car[2]  10.0.2.244  10.0.0.0/8  <unspec>  wlan
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  lo0 <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  cellularNic <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
++I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  lo0 <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  lo0 <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  lo0 <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
++I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  lo0 <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan <unspec>
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan 10.0.3.39
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan 10.0.3.39
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan 10.0.3.39
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan 10.0.3.39
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan 10.0.3.39
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan 10.0.3.39
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan 10.0.3.39
++R #72363  5.4s  ExtraDummyMultiCell5G.car[3]  10.0.3.39  <unspec>/0  <unspec>  wlan
+*I  #72363  5.4s  ExtraDummyMultiCell5G.car[3]  wlan 10.0.3.39
++R #72363  5.4s  ExtraDummyMultiCell5G.car[3]  10.0.3.39  10.0.0.0/8  <unspec>  wlan
