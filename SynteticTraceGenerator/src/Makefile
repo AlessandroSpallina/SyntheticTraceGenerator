@@ -2,7 +2,7 @@
 # OMNeT++/OMNEST Makefile for SynteticTraceGenerator
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep -KINET4_3_PROJ=../../inet4.3 -KSIMU5G_PROJ=../../Simu5G -KVEINS_INET_PROJ=../../veins/subprojects/veins_inet -KVEINS_PROJ=../../veins -DINET_IMPORT -DVEINS_INET_IMPORT -L$$\(INET4_3_PROJ\)/src -L$$\(SIMU5G_PROJ\)/src -L$$\(VEINS_INET_PROJ\)/src -lINET$$\(D\) -lsimu5g$$\(D\) -lveins_inet$$\(D\)
+#  opp_makemake -f --deep -KINET4_3_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/inet4.3 -KSIMU5G_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/Simu5G -KVEINS_INET_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/veins/subprojects/veins_inet -KVEINS_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/veins -DINET_IMPORT -DVEINS_INET_IMPORT -L$$\(INET4_3_PROJ\)/src -L$$\(SIMU5G_PROJ\)/src -L$$\(VEINS_INET_PROJ\)/src -lINET$$\(D\) -lsimu5g$$\(D\) -lveins_inet$$\(D\)
 #
 
 # Name of target to be created (-o option)
@@ -42,10 +42,10 @@ MSGFILES =
 SMFILES =
 
 # Other makefile variables (-K)
-INET4_3_PROJ=../../inet4.3
-SIMU5G_PROJ=../../Simu5G
-VEINS_INET_PROJ=../../veins/subprojects/veins_inet
-VEINS_PROJ=../../veins
+INET4_3_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/inet4.3
+SIMU5G_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/Simu5G
+VEINS_INET_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/veins/subprojects/veins_inet
+VEINS_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/veins
 
 #------------------------------------------------------------------------------
 
