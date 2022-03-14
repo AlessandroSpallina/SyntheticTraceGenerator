@@ -2,7 +2,7 @@
 # OMNeT++/OMNEST Makefile for SynteticTraceGenerator
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep -KINET4_3_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/inet4.3 -KSIMU5G_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/Simu5G -KVEINS_INET_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/veins/subprojects/veins_inet -KVEINS_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/veins -DINET_IMPORT -DVEINS_INET_IMPORT -L$$\(INET4_3_PROJ\)/src -L$$\(SIMU5G_PROJ\)/src -L$$\(VEINS_INET_PROJ\)/src -lINET$$\(D\) -lsimu5g$$\(D\) -lveins_inet$$\(D\)
+#  opp_makemake -f --deep -KINET4_3_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/inet4.3 -KSIMU5G_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/Simu5G -KVEINS_INET_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/veins/subprojects/veins_inet -KVEINS_PROJ=/home/skela/Documents/WORKSPACE/software/workspace/veins -DINET_IMPORT -DVEINS_INET_IMPORT -I$$\(INET4_3_PROJ\)/src -I$$\(SIMU5G_PROJ\)/src -I$$\(VEINS_INET_PROJ\)/src -I$$\(VEINS_PROJ\)/src -I. -L$$\(INET4_3_PROJ\)/src -L$$\(SIMU5G_PROJ\)/src -L$$\(VEINS_INET_PROJ\)/src -lINET$$\(D\) -lsimu5g$$\(D\) -lveins_inet$$\(D\)
 #
 
 # Name of target to be created (-o option)
@@ -19,7 +19,7 @@ USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(QTENV_LIBS) $(CMDENV_LIBS)
 #USERIF_LIBS = $(QTENV_LIBS)
 
 # C++ include paths (with -I)
-INCLUDE_PATH =
+INCLUDE_PATH = -I$(INET4_3_PROJ)/src -I$(SIMU5G_PROJ)/src -I$(VEINS_INET_PROJ)/src -I$(VEINS_PROJ)/src -I.
 
 # Additional object and library files to link with
 EXTRA_OBJS =
@@ -33,10 +33,12 @@ PROJECTRELATIVE_PATH = src
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc, .msg and .sm files
-OBJS =
+OBJS = $O/apps/CarPublisher/MECPublisherApp.o $O/apps/CarPublisher/UEPublisherApp.o $O/apps/CarPublisher/packets/PublisherPacket_m.o $O/nodes/mec/MECPlatform/MECPackets_m.o
 
 # Message files
-MSGFILES =
+MSGFILES = \
+    apps/CarPublisher/packets/PublisherPacket.msg \
+    nodes/mec/MECPlatform/MECPackets.msg
 
 # SM files
 SMFILES =
