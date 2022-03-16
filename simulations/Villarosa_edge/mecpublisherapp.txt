@@ -1,0 +1,16 @@
+[1.1600002168] MECPublisherApp - Received message from UE, tire_temperature °C 68.0769
+[1.1870002168] MECPublisherApp - Received message from UE, engine_temperature °C 32.8805
+[1.2000002168] MECPublisherApp - Received message from UE, front_distance m 982.55
+[1.2190002168] MECPublisherApp - Received message from UE, speed km/h 188.339
+[1.2600002168] MECPublisherApp - Received message from UE, tire_temperature °C 6.54173
+[1.2840002168] MECPublisherApp - Received message from UE, engine_temperature °C 79.6236
+[1.2870002168] MECPublisherApp - Received message from UE, engine_temperature °C 39.277
+[1.3000002168] MECPublisherApp - Received message from UE, front_distance m 477.732
+[1.3190002168] MECPublisherApp - Received message from UE, speed km/h 68.7267
+[1.3600002168] MECPublisherApp - Received message from UE, tire_temperature °C 14.9856
+[1.3710002168] MECPublisherApp - Received message from UE, tire_temperature °C 80.7891
+[1.3840002168] MECPublisherApp - Received message from UE, engine_temperature °C 5.45079
+[1.3870002168] MECPublisherApp - Received message from UE, engine_temperature °C 45.4071
+[1.4000002168] MECPublisherApp - Received message from UE, front_distance m 319.033
+[1.4190002168] MECPublisherApp - Received message from UE, speed km/h 123.494
+[1.4600002168] MECPublisherApp - Received message from UE, tire_temperature °C 8.16596
