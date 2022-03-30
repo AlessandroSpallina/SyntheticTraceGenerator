@@ -34,7 +34,7 @@ network singleMecHost
         double playgroundSizeX @unit(m); // x size of the area the nodes are in (in meters)
         double playgroundSizeY @unit(m); // y size of the area the nodes are in (in meters)
         double playgroundSizeZ @unit(m); // z size of the area the nodes are in (in meters)
-        @display("bgb=805.92,499.56");
+        @display("bgb=804.955,772.59503");
 
     submodules:
 
@@ -54,35 +54,42 @@ network singleMecHost
             @display("p=691.38,342.24;is=s");
         }
         upf: Upf {
-            @display("p=425.73624,249.77875;is=l");
+            @display("p=427.75876,390.3425;is=l");
         }
         gNodeB1: gNodeB {
-            @display("p=140,250;is=vl");
+            @display("p=141.575,64.72;is=vl");
+        }
+        gNodeB2: gNodeB {
+            @display("p=141.575,677.5375;is=vl");
         }
         car[numCars]: NRUe {
-            @display("p=300,300");
+            @display("p=301.3525,439.89374");
         }
         //# MEC module
         mecHost: MECHost {
-            @display("p=404.34,144.9;is=l");
+            @display("p=437.664,251.424;is=l");
         }
 
         mecOrchestrator: MecOrchestrator {
-            @display("p=564.2775,249.77875;is=l");
+            @display("p=566.3,390.3425;is=l");
         }
 
         ualcmp: UALCMP {
-            @display("p=490.45624,248.7675;i=device/smallrouter");
+            @display("p=492.47876,389.33124;i=device/smallrouter");
         }
 
 
     connections allowunconnected:
 
         upf.pppg++ <--> Eth10G <--> gNodeB1.ppp;
-        ualcmp.ppp++ <--> Eth10G <--> upf.filterGate;  
-        
+        upf.pppg++ <--> Eth10G <--> gNodeB2.ppp;
+        ualcmp.ppp++ <--> Eth10G <--> upf.filterGate;
+
         ualcmp.toMecOrchestrator --> mecOrchestrator.fromUALCMP;
-        ualcmp.fromMecOrchestrator <-- mecOrchestrator.toUALCMP;     
+        ualcmp.fromMecOrchestrator <-- mecOrchestrator.toUALCMP;
+
+		//# X2 connections
+        gNodeB1.x2++ <--> Eth10G <--> gNodeB2.x2++;
 
         //#	mec
         // direct connection between gNodeB1 and mecHost

@@ -2,7 +2,7 @@
  apps/CarPublisher/packets/PublisherPacket_m.cc \
  apps/CarPublisher/packets/../../CarPublisher/packets/PublisherPacket_m.h \
  /home/skela/Documents/WORKSPACE/software/omnetpp-6.0pre11-src-linux/omnetpp-6.0pre11/include/omnetpp.h \
- /home/skela/Documents/WORKSPACE/software/neworkspace/Simu5G/src/nodes/mec/MECPlatform/MECPackets_m.h \
+ /home/skela/Documents/WORKSPACE/software/test/Simu5G/src/nodes/mec/MECPlatform/MECPackets_m.h \
  /home/skela/Documents/WORKSPACE/software/neworkspace/inet4.3/src/inet/common/INETDefs_m.h \
  /home/skela/Documents/WORKSPACE/software/neworkspace/inet4.3/src/inet/common/INETDefs.h \
  /home/skela/Documents/WORKSPACE/software/neworkspace/inet4.3/src/inet/common/precompiled_release.h \
@@ -43,7 +43,7 @@ apps/CarPublisher/packets/../../CarPublisher/packets/PublisherPacket_m.h:
 
 /home/skela/Documents/WORKSPACE/software/omnetpp-6.0pre11-src-linux/omnetpp-6.0pre11/include/omnetpp.h:
 
-/home/skela/Documents/WORKSPACE/software/neworkspace/Simu5G/src/nodes/mec/MECPlatform/MECPackets_m.h:
+/home/skela/Documents/WORKSPACE/software/test/Simu5G/src/nodes/mec/MECPlatform/MECPackets_m.h:
 
 /home/skela/Documents/WORKSPACE/software/neworkspace/inet4.3/src/inet/common/INETDefs_m.h:
 

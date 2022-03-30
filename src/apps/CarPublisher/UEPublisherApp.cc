@@ -77,12 +77,6 @@ void UEPublisherApp::initialize(int stage)
     selfStart_ = new cMessage("selfStart");
     selfMecAppStart_ = new cMessage("selfMecAppStart");
 
-    //initializing sensors auto-scheluded control messages
-//    int selfSensors_[sensorCount];
-//    for (int i=0; i<sensorCount; i++) {
-//        selfSensors_[i] = new cMessage("selfSensor", i);
-//    }
-
     //starting UEWarningAlertApp
     simtime_t startTime = par("startTime");
     EV << "UEPublisherApp::initialize - starting sendStartMEWarningAlertApp() in " << startTime << " seconds " << endl;
@@ -102,10 +96,7 @@ void UEPublisherApp::handleMessage(cMessage *msg)
         if(!strcmp(msg->getName(), "selfStart")) {
             sendStartMECPublisherApp();
         }
-        //else if(!strcmp(msg->getName(), "selfMecAppStart")) {
-        //    sendMessageToMECApp();
-        //    scheduleAt(simTime() + period_, selfMecAppStart_);
-        //}
+
         else if(!strcmp(msg->getName(), "selfSensor")) {
             sendSensorValueToMECApp(msg->getKind());
         } else {
@@ -223,8 +214,6 @@ void UEPublisherApp::handleAckStartMECPublisherApp(cMessage* msg)
 }
 
 
-// see https://stackoverflow.com/a/9324796
-//     https://0paste.com/360335
 double getRandomValue(double lower_bound, double upper_bound) {
     static default_random_engine re;
 
