@@ -1,0 +1,28 @@
+<!--
+<launch>
+  <copy file="scenario/in/most.net.xml"/>
+  <copy file="scenario/in/route/most.commercial.rou.xml"/>
+  <copy file="scenario/in/most.sumocfg" type="config"/>
+  <copy file="scenario/in/add/most.poly.xml"/>
+</launch> 
+-->
+
+<launch>
+  <copy file="most.net.xml"/>
+  <!-- <copy file="most.commercial.rou.xml"/> -->
+  <copy file="most.sumocfg" type="config"/>
+  <copy file="most.poly.xml"/>
+  
+  <copy file="most.buses.flows.xml"/>
+  <copy file="most.trains.flows.xml"/>
+  <copy file="most.pedestrian.rou.xml"/>
+  <copy file="most.commercial.rou.xml"/>
+  <copy file="most.special.rou.xml"/>
+  <copy file="most.highway.flows.xml"/>
+  <copy file="most.busstops.add.xml"/>
+  <copy file="most.trainstops.add.xml"/>
+  <copy file="most.parking.allvisible.add.xml"/>
+  <copy file="basic.vType.xml"/>
+  
+  <copy file="heterogeneous.trips.xml"/>
+</launch>
