@@ -1,0 +1,16 @@
+[2022-05-03 17:14:21.058] [mecLogger0] [info] @ numCars 3
+[2022-05-03 17:14:24.665] [mecLogger0] [info] handleMessage: received connectMp1; isSelf? true
+[2022-05-03 17:14:29.547] [mecLogger0] [info] handleMessage: received ESTABLISHED; isSelf? false
+[2022-05-03 17:14:38.499] [mecLogger0] [info] handleMessage: received data; isSelf? false
+[2022-05-03 17:15:00.050] [mecLogger0] [info] handleMessage: received processedMp1Response; isSelf? true
+[2022-05-03 17:15:22.486] [mecLogger0] [info] handleMessage: received WarningAlertPacketStart; isSelf? false
+[2022-05-03 17:15:54.844] [mecLogger0] [info] handleMessage: received connectService; isSelf? true
+[2022-05-03 17:15:57.734] [mecLogger0] [info] handleMessage: received ESTABLISHED; isSelf? false
+[2022-05-03 17:16:06.253] [mecLogger0] [info] handleMessage: received data; isSelf? false
+[2022-05-03 17:16:06.254] [mecLogger0] [info] handleMessage: received data; isSelf? false
+[2022-05-03 17:16:06.262] [mecLogger0] [info] handleMessage: received PingPongPacket; isSelf? false
+[2022-05-03 17:16:06.289] [mecLogger0] [info] handleMessage: received processedServiceResponse; isSelf? true
+[2022-05-03 17:16:06.419] [mecLogger0] [info] handleMessage: received PingPongPacket; isSelf? false
+[2022-05-03 17:16:06.487] [mecLogger0] [info] handleMessage: received PingPongPacket; isSelf? false
+[2022-05-03 17:16:06.567] [mecLogger0] [info] handleMessage: received PingPongPacket; isSelf? false
+[2022-05-03 17:16:06.605] [mecLogger0] [info] handleMessage: received PingPongPacket; isSelf? false

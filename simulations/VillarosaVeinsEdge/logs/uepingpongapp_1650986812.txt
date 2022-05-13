@@ -1,0 +1,2 @@
+[2022-04-26 17:26:52.625] [ueLogger0] [info] @ Lambda=3
+[2022-04-26 17:26:52.913] [ueLogger0] [info] handleMessage: received selfStart; isSelf? true

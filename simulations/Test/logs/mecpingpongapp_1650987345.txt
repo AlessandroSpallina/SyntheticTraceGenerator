@@ -1,0 +1,5 @@
+[2022-04-26 17:35:45.334] [mecLogger0] [info] @ numCars 3
+[2022-04-26 17:35:45.334] [mecLogger0] [info] handleMessage: received connectMp1; isSelf? true
+[2022-04-26 17:35:45.336] [mecLogger0] [info] handleMessage: received ESTABLISHED; isSelf? false
+[2022-04-26 17:35:45.338] [mecLogger0] [info] handleMessage: received data; isSelf? false
+[2022-04-26 17:35:45.354] [mecLogger0] [info] handleMessage: received processedMp1Response; isSelf? true

@@ -1,0 +1,321 @@
+[2022-04-26 15:17:36.755] [ueLogger0] [info] @ Lambda=3
+[2022-04-26 15:17:43.046] [ueLogger0] [info] handleMessage: received selfStart; isSelf? true
+[2022-04-26 15:17:43.141] [ueLogger0] [info] handleMessage: received DeviceAppStartAckPacket; isSelf? false
+[2022-04-26 15:17:43.141] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.173] [ueLogger0] [info] handleMessage: received WarningAlertPacketInfo; isSelf? false
+[2022-04-26 15:17:43.227] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.227] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.395] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.395] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.522] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.522] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.682] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.682] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.713] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.713] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.760] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.760] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.855] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.855] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.915] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.915] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.070] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.070] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.076] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.076] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.136] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.136] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.183] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.183] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.208] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.208] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.264] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.264] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.334] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.334] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.356] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.356] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.459] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.459] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.511] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.511] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.553] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.553] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.765] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.765] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.775] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.775] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.811] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.811] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.842] [ueLogger0] [info] handleMessa[2022-04-26 15:17:36.755] [ueLogger1] [info] @ Lambda=3
+[2022-04-26 15:17:43.047] [ueLogger1] [info] handleMessage: received selfStart; isSelf? true
+[2022-04-26 15:17:43.141] [ueLogger1] [info] handleMessage: received DeviceAppStartAckPacket; isSelf? false
+[2022-04-26 15:17:43.141] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.173] [ueLogger1] [info] handleMessage: received WarningAlertPacketInfo; isSelf? false
+[2022-04-26 15:17:43.241] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.241] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.355] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.355] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.427] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.427] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.437] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.437] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.553] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.553] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.579] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.579] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.609] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.609] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.785] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.785] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.830] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.830] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.861] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.861] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.924] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.924] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.053] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.053] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.083] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.083] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.114] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.114] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.120] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.120] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.129] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.129] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.190] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.190] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.314] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.314] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.608] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.608] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.804] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.804] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:45.155] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:45.155] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:45.193] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:45.193] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:53.964] [ueLogger1] [info] handleMessa[2022-04-26 15:17:36.756] [ueLogger2] [info] @ Lambda=3
+[2022-04-26 15:17:43.047] [ueLogger2] [info] handleMessage: received selfStart; isSelf? true
+[2022-04-26 15:17:43.141] [ueLogger2] [info] handleMessage: received DeviceAppStartAckPacket; isSelf? false
+[2022-04-26 15:17:43.141] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.174] [ueLogger2] [info] handleMessage: received WarningAlertPacketInfo; isSelf? false
+[2022-04-26 15:17:43.213] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.213] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.279] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.279] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.340] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.340] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.497] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.497] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.695] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.695] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.708] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.708] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.778] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.778] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:43.843] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:43.843] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.285] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.285] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.398] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.398] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.441] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.441] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.472] [ueLogger2] [info] handleMessage: received WarningAlertPacketInfo; isSelf? false
+[2022-04-26 15:17:44.525] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.525] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.623] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.623] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.671] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.671] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.679] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.679] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.689] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.689] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.703] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.703] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.861] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.861] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.868] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.868] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.957] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.957] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:45.154] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:45.154] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.049] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17ge: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.842] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.853] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.853] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.901] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.901] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:44.920] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:44.920] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:45.028] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:45.028] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:45.175] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:45.175] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:45.200] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:45.200] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:53.888] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:53.888] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:53.991] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:53.991] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.109] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.110] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.121] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.121] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.216] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.216] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.259] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.259] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.443] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.443] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.546] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.546] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.672] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.672] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.769] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.770] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.968] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.968] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.187] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.187] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.313] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.313] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.526] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.526] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.587] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.587] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.625] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.625] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.841] [ueLogger0] [info] handleMessage: received WarningAlertPacketInfo; isSelf? false
+[2022-04-26 15:17:55.874] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.874] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.084] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 1:54.049] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.050] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.050] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.105] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.105] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.144] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.144] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.190] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.190] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.289] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.289] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.341] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.341] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.359] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.359] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.372] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.372] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.501] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.501] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.630] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.630] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.686] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.686] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.698] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.698] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.861] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.861] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.143] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.143] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.165] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.165] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.196] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.196] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.337] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.337] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.390] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.390] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.440] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.440] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.694] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.694] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.902] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.902] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.957] [ueLogger2] [info] handleMessage: received WarningAlertPacketInfo; isSelf? false
+[2022-04-26 15:17:56.369] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.370] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.410] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.410] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.437] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.437] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.449] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.449] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.473] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.473] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.598] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.598] [ueLogger2] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.635] [ueLogger2] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.635] [ueLogger2] [info] @ Sent ping to the MEC
+ge: received selfSendPing; isSelf? true
+[2022-04-26 15:17:53.964] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.006] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.006] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.189] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.189] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.272] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.272] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.467] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.467] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.488] [ueLogger1] [info] handleMessage: received WarningAlertPacketInfo; isSelf? false
+[2022-04-26 15:17:54.545] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.545] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.625] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.625] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.739] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.739] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.893] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.893] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:54.904] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:54.904] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.149] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.149] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.276] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.276] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.283] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.283] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.656] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.656] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.737] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.737] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:55.910] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:55.910] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.043] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.043] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.165] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.165] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.200] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.200] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.253] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.253] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.272] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.272] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.379] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.379] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.554] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.554] [ueLogger1] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.615] [ueLogger1] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.615] [ueLogger1] [info] @ Sent ping to the MEC
+5:17:56.084] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.153] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.153] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.274] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.274] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.310] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.310] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.358] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.358] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.386] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.386] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.451] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.451] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.471] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.471] [ueLogger0] [info] @ Sent ping to the MEC
+[2022-04-26 15:17:56.539] [ueLogger0] [info] handleMessage: received selfSendPing; isSelf? true
+[2022-04-26 15:17:56.539] [ueLogger0] [info] @ Sent ping to the MEC

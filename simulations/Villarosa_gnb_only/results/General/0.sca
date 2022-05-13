@@ -1,8 +1,8 @@
 version 3
-run General-0-20220316-01:01:02-123857
+run General-0-20220404-02:07:21-888060
 attr configname General
-attr datetime 20220316-01:01:02
-attr datetimef 20220316-010102
+attr datetime 20220404-02:07:21
+attr datetimef 20220404-020721
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,13 +10,13 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network syntetictracegenerator.simulations.Villarosa_gnb_only.DummyScenario
-attr processid 123857
+attr processid 888060
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
-config image-path ../../images:../../../../../Documents/WORKSPACE/software/neworkspace/inet4.3/images:../../../../../Documents/WORKSPACE/software/neworkspace/Simu5G/images:../../../../../Documents/WORKSPACE/software/neworkspace/veins/subprojects/veins_inet/images:../../../../../Documents/WORKSPACE/software/neworkspace/veins/images
+config image-path ../../images:../../../../../neworkspace/inet4.3/images:../../../../Simu5G/images:../../../../../workspace/veins/subprojects/veins_inet/images:../../../../../workspace/veins/images
 config cmdenv-express-mode true
 config cmdenv-autoflush true
 config image-path ../../images
@@ -371,7 +371,7 @@ attr unit dB
 par DummyScenario.car[1].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[1].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[1].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[1].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[1].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[1].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[1].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[1].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -411,6 +411,7 @@ par DummyScenario.car[1].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[1].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[1].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[1].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[1].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[1].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[1].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[1].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -443,7 +444,7 @@ par DummyScenario.car[1].cellularNic address "\"0A-AA-00-00-00-05\""
 par DummyScenario.car[1].cellularNic d2dInitialMode false
 par DummyScenario.car[1].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[1].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[1].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[1].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[1].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[1].cellularNic numNRCarriers 1
 par DummyScenario.car[1].at typename "\"inet.common.MessageDispatcher\""
@@ -783,7 +784,7 @@ attr unit dB
 par DummyScenario.car[2].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[2].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[2].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[2].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[2].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[2].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[2].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[2].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -823,6 +824,7 @@ par DummyScenario.car[2].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[2].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[2].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[2].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[2].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[2].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[2].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[2].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -855,7 +857,7 @@ par DummyScenario.car[2].cellularNic address "\"0A-AA-00-00-00-06\""
 par DummyScenario.car[2].cellularNic d2dInitialMode false
 par DummyScenario.car[2].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[2].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[2].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[2].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[2].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[2].cellularNic numNRCarriers 1
 par DummyScenario.car[2].at typename "\"inet.common.MessageDispatcher\""
@@ -1195,7 +1197,7 @@ attr unit dB
 par DummyScenario.car[5].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[5].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[5].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[5].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[5].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[5].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[5].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[5].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -1235,6 +1237,7 @@ par DummyScenario.car[5].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[5].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[5].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[5].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[5].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[5].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[5].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[5].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -1267,7 +1270,7 @@ par DummyScenario.car[5].cellularNic address "\"0A-AA-00-00-00-09\""
 par DummyScenario.car[5].cellularNic d2dInitialMode false
 par DummyScenario.car[5].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[5].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[5].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[5].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[5].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[5].cellularNic numNRCarriers 1
 par DummyScenario.car[5].at typename "\"inet.common.MessageDispatcher\""
@@ -1468,7 +1471,7 @@ par DummyScenario.routingRecorder enabled false
 par DummyScenario.configurator typename "\"inet.networklayer.configurator.ipv4.Ipv4NetworkConfigurator\""
 par DummyScenario.configurator minLinkWeight 0.001
 par DummyScenario.configurator configureIsolatedNetworksSeparatly false
-par DummyScenario.configurator config "<config>...</config> at /home/skela/git/SynteticTraceGenerator/SynteticTraceGenerator/simulations/Villarosa_gnb_only/demo.xml:1"
+par DummyScenario.configurator config "<config>...</config> at /home/skela/Documents/WORKSPACE/software/test/SynteticTraceGenerator/SynteticTraceGenerator/simulations/Villarosa_gnb_only/demo.xml:1"
 par DummyScenario.configurator assignAddresses true
 par DummyScenario.configurator assignUniqueAddresses true
 par DummyScenario.configurator assignDisjunctSubnetAddresses true
@@ -1505,7 +1508,7 @@ par DummyScenario.veinsManager roiRoads "\"\""
 par DummyScenario.veinsManager roiRects "\"\""
 par DummyScenario.veinsManager penetrationRate 1
 par DummyScenario.veinsManager ignoreGuiCommands false
-par DummyScenario.veinsManager launchConfig "<launch>...</launch> at /home/skela/git/SynteticTraceGenerator/SynteticTraceGenerator/simulations/Villarosa_gnb_only/heterogeneous.launchd.xml:1"
+par DummyScenario.veinsManager launchConfig "<launch>...</launch> at /home/skela/Documents/WORKSPACE/software/test/SynteticTraceGenerator/SynteticTraceGenerator/simulations/Villarosa_gnb_only/heterogeneous.launchd.xml:1"
 par DummyScenario.channelControl typename "\"simu5g.world.radio.LteChannelControl\""
 par DummyScenario.channelControl coreDebug false
 par DummyScenario.channelControl pMax 20mW
@@ -3124,7 +3127,7 @@ par DummyScenario.gNodeB1.cellularNic.phy lambdaMinTh 0.02
 par DummyScenario.gNodeB1.cellularNic.phy lambdaMaxTh 0.2
 par DummyScenario.gNodeB1.cellularNic.phy lambdaRatioTh 20
 par DummyScenario.gNodeB1.cellularNic.phy enableD2DCqiReporting true
-par DummyScenario.gNodeB1.cellularNic.channelModel[0] typename "\"simu5g.stack.phy.ChannelModel.LteRealisticChannelModel\""
+par DummyScenario.gNodeB1.cellularNic.channelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.gNodeB1.cellularNic.channelModel[0] componentCarrierIndex 0
 par DummyScenario.gNodeB1.cellularNic.channelModel[0] shadowing true
 par DummyScenario.gNodeB1.cellularNic.channelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -3164,6 +3167,7 @@ par DummyScenario.gNodeB1.cellularNic.channelModel[0] useRsrqFromLog false
 par DummyScenario.gNodeB1.cellularNic.channelModel[0] rsrqShift 22
 par DummyScenario.gNodeB1.cellularNic.channelModel[0] rsrqScale 1
 par DummyScenario.gNodeB1.cellularNic.channelModel[0] collectSinrStatistics true
+par DummyScenario.gNodeB1.cellularNic.channelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.gNodeB1.cellularNic.x2Manager typename "\"simu5g.x2.LteX2Manager\""
 par DummyScenario.gNodeB1.cellularNic.handoverManager typename "\"simu5g.stack.handoverManager.LteHandoverManager\""
 par DummyScenario.gNodeB1.cellularNic.handoverManager losslessHandover false
@@ -3193,7 +3197,7 @@ par DummyScenario.gNodeB1.cellularNic processingDelayIn 0s
 attr unit s
 par DummyScenario.gNodeB1.cellularNic processingDelayOut 0s
 attr unit s
-par DummyScenario.gNodeB1.cellularNic LteChannelModelType "\"LteRealisticChannelModel\""
+par DummyScenario.gNodeB1.cellularNic LteChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.gNodeB1.cellularNic d2dCapable true
 par DummyScenario.gNodeB1.cellularNic dualConnectivityEnabled false
 par DummyScenario.gNodeB1.cellularNic numCarriers 1
@@ -4049,7 +4053,7 @@ par DummyScenario.gNodeB2.cellularNic.phy lambdaMinTh 0.02
 par DummyScenario.gNodeB2.cellularNic.phy lambdaMaxTh 0.2
 par DummyScenario.gNodeB2.cellularNic.phy lambdaRatioTh 20
 par DummyScenario.gNodeB2.cellularNic.phy enableD2DCqiReporting true
-par DummyScenario.gNodeB2.cellularNic.channelModel[0] typename "\"simu5g.stack.phy.ChannelModel.LteRealisticChannelModel\""
+par DummyScenario.gNodeB2.cellularNic.channelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.gNodeB2.cellularNic.channelModel[0] componentCarrierIndex 0
 par DummyScenario.gNodeB2.cellularNic.channelModel[0] shadowing true
 par DummyScenario.gNodeB2.cellularNic.channelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -4089,6 +4093,7 @@ par DummyScenario.gNodeB2.cellularNic.channelModel[0] useRsrqFromLog false
 par DummyScenario.gNodeB2.cellularNic.channelModel[0] rsrqShift 22
 par DummyScenario.gNodeB2.cellularNic.channelModel[0] rsrqScale 1
 par DummyScenario.gNodeB2.cellularNic.channelModel[0] collectSinrStatistics true
+par DummyScenario.gNodeB2.cellularNic.channelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.gNodeB2.cellularNic.x2Manager typename "\"simu5g.x2.LteX2Manager\""
 par DummyScenario.gNodeB2.cellularNic.handoverManager typename "\"simu5g.stack.handoverManager.LteHandoverManager\""
 par DummyScenario.gNodeB2.cellularNic.handoverManager losslessHandover false
@@ -4118,7 +4123,7 @@ par DummyScenario.gNodeB2.cellularNic processingDelayIn 0s
 attr unit s
 par DummyScenario.gNodeB2.cellularNic processingDelayOut 0s
 attr unit s
-par DummyScenario.gNodeB2.cellularNic LteChannelModelType "\"LteRealisticChannelModel\""
+par DummyScenario.gNodeB2.cellularNic LteChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.gNodeB2.cellularNic d2dCapable true
 par DummyScenario.gNodeB2.cellularNic dualConnectivityEnabled false
 par DummyScenario.gNodeB2.cellularNic numCarriers 1
@@ -4974,7 +4979,7 @@ par DummyScenario.gNodeB3.cellularNic.phy lambdaMinTh 0.02
 par DummyScenario.gNodeB3.cellularNic.phy lambdaMaxTh 0.2
 par DummyScenario.gNodeB3.cellularNic.phy lambdaRatioTh 20
 par DummyScenario.gNodeB3.cellularNic.phy enableD2DCqiReporting true
-par DummyScenario.gNodeB3.cellularNic.channelModel[0] typename "\"simu5g.stack.phy.ChannelModel.LteRealisticChannelModel\""
+par DummyScenario.gNodeB3.cellularNic.channelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.gNodeB3.cellularNic.channelModel[0] componentCarrierIndex 0
 par DummyScenario.gNodeB3.cellularNic.channelModel[0] shadowing true
 par DummyScenario.gNodeB3.cellularNic.channelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -5014,6 +5019,7 @@ par DummyScenario.gNodeB3.cellularNic.channelModel[0] useRsrqFromLog false
 par DummyScenario.gNodeB3.cellularNic.channelModel[0] rsrqShift 22
 par DummyScenario.gNodeB3.cellularNic.channelModel[0] rsrqScale 1
 par DummyScenario.gNodeB3.cellularNic.channelModel[0] collectSinrStatistics true
+par DummyScenario.gNodeB3.cellularNic.channelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.gNodeB3.cellularNic.x2Manager typename "\"simu5g.x2.LteX2Manager\""
 par DummyScenario.gNodeB3.cellularNic.handoverManager typename "\"simu5g.stack.handoverManager.LteHandoverManager\""
 par DummyScenario.gNodeB3.cellularNic.handoverManager losslessHandover false
@@ -5043,7 +5049,7 @@ par DummyScenario.gNodeB3.cellularNic processingDelayIn 0s
 attr unit s
 par DummyScenario.gNodeB3.cellularNic processingDelayOut 0s
 attr unit s
-par DummyScenario.gNodeB3.cellularNic LteChannelModelType "\"LteRealisticChannelModel\""
+par DummyScenario.gNodeB3.cellularNic LteChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.gNodeB3.cellularNic d2dCapable true
 par DummyScenario.gNodeB3.cellularNic dualConnectivityEnabled false
 par DummyScenario.gNodeB3.cellularNic numCarriers 1
@@ -5853,7 +5859,7 @@ attr unit dB
 par DummyScenario.car[0].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[0].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[0].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[0].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[0].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[0].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[0].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[0].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -5893,6 +5899,7 @@ par DummyScenario.car[0].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[0].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[0].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[0].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[0].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[0].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[0].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[0].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -5925,7 +5932,7 @@ par DummyScenario.car[0].cellularNic address "\"0A-AA-00-00-00-04\""
 par DummyScenario.car[0].cellularNic d2dInitialMode false
 par DummyScenario.car[0].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[0].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[0].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[0].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[0].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[0].cellularNic numNRCarriers 1
 par DummyScenario.car[0].at typename "\"inet.common.MessageDispatcher\""
@@ -6265,7 +6272,7 @@ attr unit dB
 par DummyScenario.car[3].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[3].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[3].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[3].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[3].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[3].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[3].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[3].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -6305,6 +6312,7 @@ par DummyScenario.car[3].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[3].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[3].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[3].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[3].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[3].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[3].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[3].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -6337,7 +6345,7 @@ par DummyScenario.car[3].cellularNic address "\"0A-AA-00-00-00-07\""
 par DummyScenario.car[3].cellularNic d2dInitialMode false
 par DummyScenario.car[3].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[3].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[3].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[3].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[3].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[3].cellularNic numNRCarriers 1
 par DummyScenario.car[3].at typename "\"inet.common.MessageDispatcher\""
@@ -6677,7 +6685,7 @@ attr unit dB
 par DummyScenario.car[4].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[4].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[4].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[4].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[4].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[4].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[4].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[4].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -6717,6 +6725,7 @@ par DummyScenario.car[4].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[4].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[4].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[4].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[4].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[4].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[4].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[4].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -6749,7 +6758,7 @@ par DummyScenario.car[4].cellularNic address "\"0A-AA-00-00-00-08\""
 par DummyScenario.car[4].cellularNic d2dInitialMode false
 par DummyScenario.car[4].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[4].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[4].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[4].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[4].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[4].cellularNic numNRCarriers 1
 par DummyScenario.car[4].at typename "\"inet.common.MessageDispatcher\""
@@ -7089,7 +7098,7 @@ attr unit dB
 par DummyScenario.car[6].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[6].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[6].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[6].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[6].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[6].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[6].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[6].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -7129,6 +7138,7 @@ par DummyScenario.car[6].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[6].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[6].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[6].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[6].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[6].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[6].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[6].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -7161,7 +7171,7 @@ par DummyScenario.car[6].cellularNic address "\"0A-AA-00-00-00-0A\""
 par DummyScenario.car[6].cellularNic d2dInitialMode false
 par DummyScenario.car[6].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[6].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[6].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[6].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[6].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[6].cellularNic numNRCarriers 1
 par DummyScenario.car[6].at typename "\"inet.common.MessageDispatcher\""
@@ -7501,7 +7511,7 @@ attr unit dB
 par DummyScenario.car[7].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[7].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[7].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[7].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[7].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[7].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[7].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[7].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -7541,6 +7551,7 @@ par DummyScenario.car[7].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[7].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[7].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[7].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[7].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[7].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[7].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[7].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -7573,7 +7584,7 @@ par DummyScenario.car[7].cellularNic address "\"0A-AA-00-00-00-0B\""
 par DummyScenario.car[7].cellularNic d2dInitialMode false
 par DummyScenario.car[7].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[7].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[7].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[7].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[7].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[7].cellularNic numNRCarriers 1
 par DummyScenario.car[7].at typename "\"inet.common.MessageDispatcher\""
@@ -7913,7 +7924,7 @@ attr unit dB
 par DummyScenario.car[8].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[8].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[8].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[8].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[8].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[8].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[8].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[8].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -7953,6 +7964,7 @@ par DummyScenario.car[8].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[8].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[8].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[8].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[8].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[8].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[8].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[8].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -7985,7 +7997,7 @@ par DummyScenario.car[8].cellularNic address "\"0A-AA-00-00-00-0C\""
 par DummyScenario.car[8].cellularNic d2dInitialMode false
 par DummyScenario.car[8].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[8].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[8].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[8].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[8].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[8].cellularNic numNRCarriers 1
 par DummyScenario.car[8].at typename "\"inet.common.MessageDispatcher\""
@@ -8325,7 +8337,7 @@ attr unit dB
 par DummyScenario.car[9].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[9].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[9].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[9].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[9].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[9].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[9].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[9].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -8365,6 +8377,7 @@ par DummyScenario.car[9].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[9].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[9].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[9].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[9].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[9].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[9].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[9].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -8397,7 +8410,7 @@ par DummyScenario.car[9].cellularNic address "\"0A-AA-00-00-00-0D\""
 par DummyScenario.car[9].cellularNic d2dInitialMode false
 par DummyScenario.car[9].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[9].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[9].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[9].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[9].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[9].cellularNic numNRCarriers 1
 par DummyScenario.car[9].at typename "\"inet.common.MessageDispatcher\""
@@ -8737,7 +8750,7 @@ attr unit dB
 par DummyScenario.car[10].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[10].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[10].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[10].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[10].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[10].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[10].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[10].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -8777,6 +8790,7 @@ par DummyScenario.car[10].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[10].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[10].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[10].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[10].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[10].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[10].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[10].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -8809,7 +8823,7 @@ par DummyScenario.car[10].cellularNic address "\"0A-AA-00-00-00-0E\""
 par DummyScenario.car[10].cellularNic d2dInitialMode false
 par DummyScenario.car[10].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[10].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[10].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[10].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[10].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[10].cellularNic numNRCarriers 1
 par DummyScenario.car[10].at typename "\"inet.common.MessageDispatcher\""
@@ -9149,7 +9163,7 @@ attr unit dB
 par DummyScenario.car[11].cellularNic.nrPhy d2dTxPower 26
 par DummyScenario.car[11].cellularNic.nrPhy d2dMulticastCaptureEffect true
 par DummyScenario.car[11].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[11].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
+par DummyScenario.car[11].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel_3GPP38_901\""
 par DummyScenario.car[11].cellularNic.nrChannelModel[0] componentCarrierIndex 0
 par DummyScenario.car[11].cellularNic.nrChannelModel[0] shadowing true
 par DummyScenario.car[11].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
@@ -9189,6 +9203,7 @@ par DummyScenario.car[11].cellularNic.nrChannelModel[0] useRsrqFromLog false
 par DummyScenario.car[11].cellularNic.nrChannelModel[0] rsrqShift 22
 par DummyScenario.car[11].cellularNic.nrChannelModel[0] rsrqScale 1
 par DummyScenario.car[11].cellularNic.nrChannelModel[0] collectSinrStatistics true
+par DummyScenario.car[11].cellularNic.nrChannelModel[0] useBuildingPenetrationLossHighLossModel false
 par DummyScenario.car[11].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
 par DummyScenario.car[11].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
 par DummyScenario.car[11].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
@@ -9221,7 +9236,7 @@ par DummyScenario.car[11].cellularNic address "\"0A-AA-00-00-00-0F\""
 par DummyScenario.car[11].cellularNic d2dInitialMode false
 par DummyScenario.car[11].cellularNic NRMacType "\"NRMacUe\""
 par DummyScenario.car[11].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[11].cellularNic NRChannelModelType "\"NRChannelModel\""
+par DummyScenario.car[11].cellularNic NRChannelModelType "\"NRChannelModel_3GPP38_901\""
 par DummyScenario.car[11].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
 par DummyScenario.car[11].cellularNic numNRCarriers 1
 par DummyScenario.car[11].at typename "\"inet.common.MessageDispatcher\""
@@ -9257,418 +9272,6 @@ par DummyScenario.car[11] hasRNISupport false
 par DummyScenario.car[11] nrMasterId 1
 par DummyScenario.car[11] nrMacNodeId 2060
 par DummyScenario.car[11] nrMacCellId 1
-par DummyScenario.car[12].interfaceTable typename "\"inet.networklayer.common.InterfaceTable\""
-par DummyScenario.car[12].interfaceTable displayAddresses false
-par DummyScenario.car[12].mobility typename "\"org.car2x.veins.subprojects.veins_inet.VeinsInetMobility\""
-par DummyScenario.car[12].mobility subjectModule "\"^\""
-par DummyScenario.car[12].mobility coordinateSystemModule "\"\""
-par DummyScenario.car[12].mobility displayStringTextFormat "\"p: %p\\nv: %v\""
-par DummyScenario.car[12].mobility updateDisplayString true
-par DummyScenario.car[12].mobility constraintAreaMinX "-inf m"
-attr unit m
-par DummyScenario.car[12].mobility constraintAreaMinY "-inf m"
-attr unit m
-par DummyScenario.car[12].mobility constraintAreaMinZ "-inf m"
-attr unit m
-par DummyScenario.car[12].mobility constraintAreaMaxX "inf m"
-attr unit m
-par DummyScenario.car[12].mobility constraintAreaMaxY "inf m"
-attr unit m
-par DummyScenario.car[12].mobility constraintAreaMaxZ "inf m"
-attr unit m
-par DummyScenario.car[12].mobility initFromDisplayString true
-par DummyScenario.car[12].udp typename "\"inet.transportlayer.udp.Udp\""
-par DummyScenario.car[12].udp interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].udp icmpModule "\"^.ipv4.icmp\""
-par DummyScenario.car[12].udp icmpv6Module "\"^.ipv6.icmpv6\""
-par DummyScenario.car[12].udp crcMode "\"declared\""
-attr enum disabled,declared,computed
-par DummyScenario.car[12].tcp typename "\"inet.transportlayer.tcp.Tcp\""
-par DummyScenario.car[12].tcp crcMode "\"declared\""
-attr enum declared,computed
-par DummyScenario.car[12].tcp advertisedWindow 7504
-par DummyScenario.car[12].tcp delayedAcksEnabled false
-par DummyScenario.car[12].tcp nagleEnabled true
-par DummyScenario.car[12].tcp limitedTransmitEnabled false
-par DummyScenario.car[12].tcp increasedIWEnabled false
-par DummyScenario.car[12].tcp sackSupport false
-par DummyScenario.car[12].tcp windowScalingSupport false
-par DummyScenario.car[12].tcp windowScalingFactor -1
-par DummyScenario.car[12].tcp timestampSupport false
-par DummyScenario.car[12].tcp mss 536
-par DummyScenario.car[12].tcp msl 120s
-attr unit s
-par DummyScenario.car[12].tcp tcpAlgorithmClass "\"TcpReno\""
-attr enum TcpVegas,TcpWestwood,TcpNewReno,TcpReno,TcpTahoe,TcpNoCongestionControl
-par DummyScenario.car[12].tcp useDataNotification false
-par DummyScenario.car[12].tcp dupthresh 3
-par DummyScenario.car[12].tcp initialSsthresh 4294967295
-par DummyScenario.car[12].tcp stopOperationExtraTime 0s
-attr unit s
-par DummyScenario.car[12].tcp stopOperationTimeout 2s
-attr unit s
-par DummyScenario.car[12].tcp ecnWillingness false
-par DummyScenario.car[12].tcp dctcpGamma 0.0625
-par DummyScenario.car[12].ipv4.transportIn.channel typename "\"ned.IdealChannel\""
-par DummyScenario.car[12].ipv4.up.out[0].channel typename "\"ned.IdealChannel\""
-par DummyScenario.car[12].ipv4.lp.out[2].channel typename "\"ned.IdealChannel\""
-par DummyScenario.car[12].ipv4.ifIn.channel typename "\"ned.IdealChannel\""
-par DummyScenario.car[12].ipv4.configurator typename "\"inet.networklayer.configurator.ipv4.HostAutoConfigurator\""
-par DummyScenario.car[12].ipv4.configurator interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].ipv4.configurator interfaces "\"wlan\""
-par DummyScenario.car[12].ipv4.configurator addressBase "\"10.0.0.0\""
-par DummyScenario.car[12].ipv4.configurator netmask "\"255.0.0.0\""
-par DummyScenario.car[12].ipv4.configurator mcastGroups "\"\""
-par DummyScenario.car[12].ipv4.routingTable typename "\"inet.networklayer.ipv4.Ipv4RoutingTable\""
-par DummyScenario.car[12].ipv4.routingTable interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].ipv4.routingTable routerId "\"auto\""
-par DummyScenario.car[12].ipv4.routingTable netmaskRoutes "\"*\""
-par DummyScenario.car[12].ipv4.routingTable forwarding false
-par DummyScenario.car[12].ipv4.routingTable multicastForwarding false
-par DummyScenario.car[12].ipv4.routingTable useAdminDist false
-par DummyScenario.car[12].ipv4.routingTable routingFile "\"\""
-par DummyScenario.car[12].ipv4.natTable typename "\"inet.networklayer.ipv4.Ipv4NatTable\""
-par DummyScenario.car[12].ipv4.natTable networkProtocolModule "\"^.ip\""
-par DummyScenario.car[12].ipv4.natTable config "<config/> at content:1"
-par DummyScenario.car[12].ipv4.up typename "\"inet.common.MessageDispatcher\""
-par DummyScenario.car[12].ipv4.up displayStringTextFormat "\"processed %p pk (%l)\""
-par DummyScenario.car[12].ipv4.igmp typename "\"inet.networklayer.ipv4.Igmpv2\""
-par DummyScenario.car[12].ipv4.igmp interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].ipv4.igmp routingTableModule "\"DummyScenario.car[12].ipv4.routingTable\""
-par DummyScenario.car[12].ipv4.igmp crcMode "\"declared\""
-attr enum declared,computed
-par DummyScenario.car[12].ipv4.igmp enabled true
-par DummyScenario.car[12].ipv4.igmp robustnessVariable 2
-par DummyScenario.car[12].ipv4.igmp queryInterval 125s
-attr unit s
-par DummyScenario.car[12].ipv4.igmp queryResponseInterval 10s
-attr unit s
-par DummyScenario.car[12].ipv4.igmp groupMembershipInterval 260s
-attr unit s
-par DummyScenario.car[12].ipv4.igmp otherQuerierPresentInterval 255s
-attr unit s
-par DummyScenario.car[12].ipv4.igmp startupQueryInterval 31.25s
-attr unit s
-par DummyScenario.car[12].ipv4.igmp startupQueryCount 2
-par DummyScenario.car[12].ipv4.igmp lastMemberQueryInterval 1s
-attr unit s
-par DummyScenario.car[12].ipv4.igmp lastMemberQueryCount 2
-par DummyScenario.car[12].ipv4.igmp unsolicitedReportInterval 10s
-attr unit s
-par DummyScenario.car[12].ipv4.icmp typename "\"inet.networklayer.ipv4.Icmp\""
-par DummyScenario.car[12].ipv4.icmp interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].ipv4.icmp routingTableModule "\"DummyScenario.car[12].ipv4.routingTable\""
-par DummyScenario.car[12].ipv4.icmp crcMode "\"declared\""
-attr enum declared,computed
-par DummyScenario.car[12].ipv4.icmp quoteLength 8B
-attr unit B
-par DummyScenario.car[12].ipv4.mp typename "\"inet.common.MessageDispatcher\""
-par DummyScenario.car[12].ipv4.mp displayStringTextFormat "\"processed %p pk (%l)\""
-par DummyScenario.car[12].ipv4.ip typename "\"inet.networklayer.ipv4.Ipv4\""
-par DummyScenario.car[12].ipv4.ip interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].ipv4.ip routingTableModule "\"DummyScenario.car[12].ipv4.routingTable\""
-par DummyScenario.car[12].ipv4.ip arpModule "\"DummyScenario.car[12].ipv4.arp\""
-par DummyScenario.car[12].ipv4.ip icmpModule "\"DummyScenario.car[12].ipv4.icmp\""
-par DummyScenario.car[12].ipv4.ip crcMode "\"declared\""
-attr enum declared,computed
-par DummyScenario.car[12].ipv4.ip timeToLive 32
-par DummyScenario.car[12].ipv4.ip multicastTimeToLive 32
-par DummyScenario.car[12].ipv4.ip fragmentTimeout 60s
-attr unit s
-par DummyScenario.car[12].ipv4.ip limitedBroadcast false
-par DummyScenario.car[12].ipv4.ip directBroadcastInterfaces "\"\""
-par DummyScenario.car[12].ipv4.arp typename "\"inet.networklayer.arp.ipv4.Arp\""
-par DummyScenario.car[12].ipv4.arp interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].ipv4.arp routingTableModule "\"DummyScenario.car[12].ipv4.routingTable\""
-par DummyScenario.car[12].ipv4.arp retryTimeout 1s
-attr unit s
-par DummyScenario.car[12].ipv4.arp retryCount 3
-par DummyScenario.car[12].ipv4.arp cacheTimeout 120s
-attr unit s
-par DummyScenario.car[12].ipv4.arp proxyArpInterfaces "\"*\""
-par DummyScenario.car[12].ipv4.lp typename "\"inet.common.MessageDispatcher\""
-par DummyScenario.car[12].ipv4.lp displayStringTextFormat "\"processed %p pk (%l)\""
-par DummyScenario.car[12].ipv4 typename "\"inet.networklayer.ipv4.Ipv4NetworkLayer\""
-par DummyScenario.car[12].ipv4 forwarding false
-par DummyScenario.car[12].ipv4 multicastForwarding false
-par DummyScenario.car[12].ipv4 interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].ipv4 displayStringTextFormat "\"%i\""
-par DummyScenario.car[12].lo[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
-par DummyScenario.car[12].lo[0].lo.upperLayerOut.channel typename "\"ned.IdealChannel\""
-par DummyScenario.car[12].lo[0].lo typename "\"inet.linklayer.loopback.Loopback\""
-par DummyScenario.car[12].lo[0].lo interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].lo[0].lo mtu 4470B
-attr unit B
-par DummyScenario.car[12].lo[0] typename "\"inet.linklayer.loopback.LoopbackInterface\""
-par DummyScenario.car[12].lo[0] displayStringTextFormat "\"%a (%i)\\n%m\""
-par DummyScenario.car[12].lo[0] recordPcap false
-par DummyScenario.car[12].lo[0] numPcapRecorders 0
-par DummyScenario.car[12].lo[0] interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].cellularNic.ip2nic.upperLayerOut.channel typename "\"ned.DelayChannel\""
-par DummyScenario.car[12].cellularNic.ip2nic.upperLayerOut.channel disabled false
-par DummyScenario.car[12].cellularNic.ip2nic.upperLayerOut.channel delay 0s
-attr unit s
-par DummyScenario.car[12].cellularNic.upperLayerIn.channel typename "\"ned.DelayChannel\""
-par DummyScenario.car[12].cellularNic.upperLayerIn.channel disabled false
-par DummyScenario.car[12].cellularNic.upperLayerIn.channel delay 0s
-attr unit s
-par DummyScenario.car[12].cellularNic.ip2nic typename "\"simu5g.stack.ip2nic.IP2Nic\""
-par DummyScenario.car[12].cellularNic.ip2nic nodeType "\"UE\""
-par DummyScenario.car[12].cellularNic.ip2nic interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].cellularNic.ip2nic routingTableModule "\"DummyScenario.car[12].ipv4.routingTable\""
-par DummyScenario.car[12].cellularNic.pdcpRrc typename "\"simu5g.stack.pdcp_rrc.NRPdcpRrcUe\""
-par DummyScenario.car[12].cellularNic.pdcpRrc headerCompressedSize -1B
-attr unit B
-par DummyScenario.car[12].cellularNic.pdcpRrc conversationalRlc 1
-attr enum TM,UM,AM,UNKNOWN_RLC_TYPE
-par DummyScenario.car[12].cellularNic.pdcpRrc streamingRlc 1
-attr enum TM,UM,AM,UNKNOWN_RLC_TYPE
-par DummyScenario.car[12].cellularNic.pdcpRrc interactiveRlc 1
-attr enum TM,UM,AM,UNKNOWN_RLC_TYPE
-par DummyScenario.car[12].cellularNic.pdcpRrc backgroundRlc 1
-attr enum TM,UM,AM,UNKNOWN_RLC_TYPE
-par DummyScenario.car[12].cellularNic.rlc.tm typename "\"simu5g.stack.rlc.LteRlcTm\""
-par DummyScenario.car[12].cellularNic.rlc.tm queueSize 2097152B
-attr unit B
-par DummyScenario.car[12].cellularNic.rlc.um typename "\"simu5g.stack.rlc.LteRlcUmD2D\""
-par DummyScenario.car[12].cellularNic.rlc.um queueSize 2097152B
-attr unit B
-par DummyScenario.car[12].cellularNic.rlc.um mapAllLcidsToSingleBearer false
-par DummyScenario.car[12].cellularNic.rlc.am typename "\"simu5g.stack.rlc.LteRlcAm\""
-par DummyScenario.car[12].cellularNic.rlc.mux typename "\"simu5g.stack.rlc.LteRlcMux\""
-par DummyScenario.car[12].cellularNic.rlc typename "\"simu5g.stack.rlc.LteRlc\""
-par DummyScenario.car[12].cellularNic.rlc LteRlcUmType "\"LteRlcUm\""
-par DummyScenario.car[12].cellularNic.rlc d2dCapable true
-par DummyScenario.car[12].cellularNic.rlc umType "\"LteRlcUmD2D\""
-par DummyScenario.car[12].cellularNic.mac typename "\"simu5g.stack.mac.LteMacUeD2D\""
-par DummyScenario.car[12].cellularNic.mac interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].cellularNic.mac queueSize 2097152B
-attr unit B
-par DummyScenario.car[12].cellularNic.mac muMimo true
-par DummyScenario.car[12].cellularNic.mac harqProcesses 8
-par DummyScenario.car[12].cellularNic.mac maxHarqRtx 3
-par DummyScenario.car[12].cellularNic.mac harqFbEvaluationTimer 4
-par DummyScenario.car[12].cellularNic.mac statDisplay false
-par DummyScenario.car[12].cellularNic.mac usePreconfiguredTxParams false
-par DummyScenario.car[12].cellularNic.mac d2dCqi 7
-par DummyScenario.car[12].cellularNic.phy typename "\"simu5g.stack.phy.NRPhyUe\""
-par DummyScenario.car[12].cellularNic.phy ueTxPower 26
-par DummyScenario.car[12].cellularNic.phy eNodeBTxPower 46
-par DummyScenario.car[12].cellularNic.phy microTxPower 30
-par DummyScenario.car[12].cellularNic.phy txDirection "\"OMNI\""
-par DummyScenario.car[12].cellularNic.phy txAngle 0
-par DummyScenario.car[12].cellularNic.phy dynamicCellAssociation false
-par DummyScenario.car[12].cellularNic.phy enableHandover false
-par DummyScenario.car[12].cellularNic.phy handoverLatency 0.05s
-attr unit s
-par DummyScenario.car[12].cellularNic.phy enableMulticastD2DRangeCheck false
-par DummyScenario.car[12].cellularNic.phy multicastD2DRange 1000m
-attr unit m
-par DummyScenario.car[12].cellularNic.phy minRssiDefault true
-par DummyScenario.car[12].cellularNic.phy minRssi -99dB
-attr unit dB
-par DummyScenario.car[12].cellularNic.phy d2dTxPower 26
-par DummyScenario.car[12].cellularNic.phy d2dMulticastCaptureEffect true
-par DummyScenario.car[12].cellularNic.phy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[12].cellularNic.channelModel[0] typename "\"simu5g.stack.phy.ChannelModel.LteRealisticChannelModel\""
-par DummyScenario.car[12].cellularNic.channelModel[0] componentCarrierIndex 0
-par DummyScenario.car[12].cellularNic.channelModel[0] shadowing true
-par DummyScenario.car[12].cellularNic.channelModel[0] scenario "\"URBAN_MACROCELL\""
-par DummyScenario.car[12].cellularNic.channelModel[0] nodeb_height 25
-par DummyScenario.car[12].cellularNic.channelModel[0] building_height 20
-par DummyScenario.car[12].cellularNic.channelModel[0] inside_building false
-par DummyScenario.car[12].cellularNic.channelModel[0] street_wide 20
-par DummyScenario.car[12].cellularNic.channelModel[0] ue_height 1.5
-par DummyScenario.car[12].cellularNic.channelModel[0] tolerateMaxDistViolation false
-par DummyScenario.car[12].cellularNic.channelModel[0] useTorus false
-par DummyScenario.car[12].cellularNic.channelModel[0] correlation_distance 50
-par DummyScenario.car[12].cellularNic.channelModel[0] targetBler 0.01
-par DummyScenario.car[12].cellularNic.channelModel[0] harqReduction 0.2
-par DummyScenario.car[12].cellularNic.channelModel[0] lambdaMinTh 0.02
-par DummyScenario.car[12].cellularNic.channelModel[0] lambdaMaxTh 0.2
-par DummyScenario.car[12].cellularNic.channelModel[0] lambdaRatioTh 20
-par DummyScenario.car[12].cellularNic.channelModel[0] antennaGainUe 0
-par DummyScenario.car[12].cellularNic.channelModel[0] antennGainEnB 18
-par DummyScenario.car[12].cellularNic.channelModel[0] antennGainMicro 5
-par DummyScenario.car[12].cellularNic.channelModel[0] thermalNoise -104.5
-par DummyScenario.car[12].cellularNic.channelModel[0] ue_noise_figure 7
-par DummyScenario.car[12].cellularNic.channelModel[0] bs_noise_figure 5
-par DummyScenario.car[12].cellularNic.channelModel[0] cable_loss 2
-par DummyScenario.car[12].cellularNic.channelModel[0] dynamic_los false
-par DummyScenario.car[12].cellularNic.channelModel[0] fixed_los false
-par DummyScenario.car[12].cellularNic.channelModel[0] fading true
-par DummyScenario.car[12].cellularNic.channelModel[0] fading_type "\"JAKES\""
-par DummyScenario.car[12].cellularNic.channelModel[0] fading_paths 6
-par DummyScenario.car[12].cellularNic.channelModel[0] delay_rms 3.63e-07
-par DummyScenario.car[12].cellularNic.channelModel[0] bgCell_interference true
-par DummyScenario.car[12].cellularNic.channelModel[0] extCell_interference true
-par DummyScenario.car[12].cellularNic.channelModel[0] downlink_interference false
-par DummyScenario.car[12].cellularNic.channelModel[0] uplink_interference false
-par DummyScenario.car[12].cellularNic.channelModel[0] d2d_interference true
-par DummyScenario.car[12].cellularNic.channelModel[0] enable_extCell_los true
-par DummyScenario.car[12].cellularNic.channelModel[0] useRsrqFromLog false
-par DummyScenario.car[12].cellularNic.channelModel[0] rsrqShift 22
-par DummyScenario.car[12].cellularNic.channelModel[0] rsrqScale 1
-par DummyScenario.car[12].cellularNic.channelModel[0] collectSinrStatistics true
-par DummyScenario.car[12].cellularNic.dlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
-par DummyScenario.car[12].cellularNic.dlFbGen feedbackType "\"ALLBANDS\""
-par DummyScenario.car[12].cellularNic.dlFbGen rbAllocationType "\"localized\""
-par DummyScenario.car[12].cellularNic.dlFbGen fbPeriod 6
-par DummyScenario.car[12].cellularNic.dlFbGen fbDelay 1
-par DummyScenario.car[12].cellularNic.dlFbGen usePeriodic true
-par DummyScenario.car[12].cellularNic.dlFbGen initialTxMode "\"SINGLE_ANTENNA_PORT0\""
-par DummyScenario.car[12].cellularNic.dlFbGen feedbackGeneratorType "\"IDEAL\""
-par DummyScenario.car[12].cellularNic.nrRlc.tm typename "\"simu5g.stack.rlc.LteRlcTm\""
-par DummyScenario.car[12].cellularNic.nrRlc.tm queueSize 2097152B
-attr unit B
-par DummyScenario.car[12].cellularNic.nrRlc.um typename "\"simu5g.stack.rlc.LteRlcUmD2D\""
-par DummyScenario.car[12].cellularNic.nrRlc.um queueSize 2097152B
-attr unit B
-par DummyScenario.car[12].cellularNic.nrRlc.um mapAllLcidsToSingleBearer false
-par DummyScenario.car[12].cellularNic.nrRlc.am typename "\"simu5g.stack.rlc.LteRlcAm\""
-par DummyScenario.car[12].cellularNic.nrRlc.mux typename "\"simu5g.stack.rlc.LteRlcMux\""
-par DummyScenario.car[12].cellularNic.nrRlc typename "\"simu5g.stack.rlc.LteRlc\""
-par DummyScenario.car[12].cellularNic.nrRlc LteRlcUmType "\"LteRlcUm\""
-par DummyScenario.car[12].cellularNic.nrRlc d2dCapable true
-par DummyScenario.car[12].cellularNic.nrRlc umType "\"LteRlcUmD2D\""
-par DummyScenario.car[12].cellularNic.nrMac typename "\"simu5g.stack.mac.NRMacUe\""
-par DummyScenario.car[12].cellularNic.nrMac interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].cellularNic.nrMac queueSize 2097152B
-attr unit B
-par DummyScenario.car[12].cellularNic.nrMac muMimo true
-par DummyScenario.car[12].cellularNic.nrMac harqProcesses 8
-par DummyScenario.car[12].cellularNic.nrMac maxHarqRtx 3
-par DummyScenario.car[12].cellularNic.nrMac harqFbEvaluationTimer 4
-par DummyScenario.car[12].cellularNic.nrMac statDisplay false
-par DummyScenario.car[12].cellularNic.nrMac usePreconfiguredTxParams false
-par DummyScenario.car[12].cellularNic.nrMac d2dCqi 7
-par DummyScenario.car[12].cellularNic.nrPhy typename "\"simu5g.stack.phy.NRPhyUe\""
-par DummyScenario.car[12].cellularNic.nrPhy ueTxPower 26
-par DummyScenario.car[12].cellularNic.nrPhy eNodeBTxPower 46
-par DummyScenario.car[12].cellularNic.nrPhy microTxPower 30
-par DummyScenario.car[12].cellularNic.nrPhy txDirection "\"OMNI\""
-par DummyScenario.car[12].cellularNic.nrPhy txAngle 0
-par DummyScenario.car[12].cellularNic.nrPhy dynamicCellAssociation true
-par DummyScenario.car[12].cellularNic.nrPhy enableHandover true
-par DummyScenario.car[12].cellularNic.nrPhy handoverLatency 0.05s
-attr unit s
-par DummyScenario.car[12].cellularNic.nrPhy enableMulticastD2DRangeCheck false
-par DummyScenario.car[12].cellularNic.nrPhy multicastD2DRange 1000m
-attr unit m
-par DummyScenario.car[12].cellularNic.nrPhy minRssiDefault true
-par DummyScenario.car[12].cellularNic.nrPhy minRssi -99dB
-attr unit dB
-par DummyScenario.car[12].cellularNic.nrPhy d2dTxPower 26
-par DummyScenario.car[12].cellularNic.nrPhy d2dMulticastCaptureEffect true
-par DummyScenario.car[12].cellularNic.nrPhy d2dMulticastCaptureEffectFactor "\"RSRP\""
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] typename "\"simu5g.stack.phy.ChannelModel.NRChannelModel\""
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] componentCarrierIndex 0
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] shadowing true
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] scenario "\"URBAN_MACROCELL\""
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] nodeb_height 25
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] building_height 20
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] inside_building false
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] street_wide 20
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] ue_height 1.5
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] tolerateMaxDistViolation false
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] useTorus false
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] correlation_distance 50
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] targetBler 0.01
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] harqReduction 0.2
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] lambdaMinTh 0.02
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] lambdaMaxTh 0.2
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] lambdaRatioTh 20
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] antennaGainUe 0
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] antennGainEnB 18
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] antennGainMicro 5
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] thermalNoise -104.5
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] ue_noise_figure 7
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] bs_noise_figure 5
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] cable_loss 2
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] dynamic_los false
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] fixed_los false
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] fading true
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] fading_type "\"JAKES\""
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] fading_paths 6
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] delay_rms 3.63e-07
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] bgCell_interference true
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] extCell_interference true
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] downlink_interference false
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] uplink_interference false
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] d2d_interference true
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] enable_extCell_los true
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] useRsrqFromLog false
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] rsrqShift 22
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] rsrqScale 1
-par DummyScenario.car[12].cellularNic.nrChannelModel[0] collectSinrStatistics true
-par DummyScenario.car[12].cellularNic.nrDlFbGen typename "\"simu5g.stack.phy.feedback.LteDlFeedbackGenerator\""
-par DummyScenario.car[12].cellularNic.nrDlFbGen feedbackType "\"ALLBANDS\""
-par DummyScenario.car[12].cellularNic.nrDlFbGen rbAllocationType "\"localized\""
-par DummyScenario.car[12].cellularNic.nrDlFbGen fbPeriod 6
-par DummyScenario.car[12].cellularNic.nrDlFbGen fbDelay 1
-par DummyScenario.car[12].cellularNic.nrDlFbGen usePeriodic true
-par DummyScenario.car[12].cellularNic.nrDlFbGen initialTxMode "\"SINGLE_ANTENNA_PORT0\""
-par DummyScenario.car[12].cellularNic.nrDlFbGen feedbackGeneratorType "\"IDEAL\""
-par DummyScenario.car[12].cellularNic typename "\"simu5g.stack.NRNicUe\""
-par DummyScenario.car[12].cellularNic displayStringTextFormat "\"%a (%i)\\n%m\""
-par DummyScenario.car[12].cellularNic recordPcap false
-par DummyScenario.car[12].cellularNic numPcapRecorders 0
-par DummyScenario.car[12].cellularNic interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].cellularNic routingTableModule "\"DummyScenario.car[12].ipv4.routingTable\""
-par DummyScenario.car[12].cellularNic LtePdcpRrcType "\"NRPdcpRrcUe\""
-par DummyScenario.car[12].cellularNic LteMacType "\"LteMacUeD2D\""
-par DummyScenario.car[12].cellularNic PacketFlowManagerType "\"PacketFlowManagerUe\""
-par DummyScenario.car[12].cellularNic hasRNISupport false
-par DummyScenario.car[12].cellularNic LtePhyType "\"NRPhyUe\""
-par DummyScenario.car[12].cellularNic nodeType "\"UE\""
-par DummyScenario.car[12].cellularNic processingDelayIn 0s
-attr unit s
-par DummyScenario.car[12].cellularNic processingDelayOut 0s
-attr unit s
-par DummyScenario.car[12].cellularNic LteChannelModelType "\"LteRealisticChannelModel\""
-par DummyScenario.car[12].cellularNic d2dCapable true
-par DummyScenario.car[12].cellularNic dualConnectivityEnabled false
-par DummyScenario.car[12].cellularNic numCarriers 1
-par DummyScenario.car[12].cellularNic address "\"0A-AA-00-00-00-10\""
-par DummyScenario.car[12].cellularNic d2dInitialMode false
-par DummyScenario.car[12].cellularNic NRMacType "\"NRMacUe\""
-par DummyScenario.car[12].cellularNic NRPhyType "\"NRPhyUe\""
-par DummyScenario.car[12].cellularNic NRChannelModelType "\"NRChannelModel\""
-par DummyScenario.car[12].cellularNic NRPacketFlowManagerType "\"NRPacketFlowManagerUe\""
-par DummyScenario.car[12].cellularNic numNRCarriers 1
-par DummyScenario.car[12].at typename "\"inet.common.MessageDispatcher\""
-par DummyScenario.car[12].at displayStringTextFormat "\"processed %p pk (%l)\""
-par DummyScenario.car[12].tn typename "\"inet.common.MessageDispatcher\""
-par DummyScenario.car[12].tn displayStringTextFormat "\"processed %p pk (%l)\""
-par DummyScenario.car[12].nl typename "\"inet.common.MessageDispatcher\""
-par DummyScenario.car[12].nl displayStringTextFormat "\"processed %p pk (%l)\""
-par DummyScenario.car[12].configurator typename "\"inet.networklayer.configurator.ipv4.HostAutoConfigurator\""
-par DummyScenario.car[12].configurator interfaceTableModule "\"DummyScenario.car[12].interfaceTable\""
-par DummyScenario.car[12].configurator interfaces "\"wlan\""
-par DummyScenario.car[12].configurator addressBase "\"10.0.0.0\""
-par DummyScenario.car[12].configurator netmask "\"255.0.0.0\""
-par DummyScenario.car[12].configurator mcastGroups "\"\""
-par DummyScenario.car[12] typename "\"simu5g.nodes.cars.NRCar\""
-par DummyScenario.car[12] mobilityType "\"VeinsInetMobility\""
-par DummyScenario.car[12] numApps 0
-par DummyScenario.car[12] hasUdp true
-par DummyScenario.car[12] hasTcp true
-par DummyScenario.car[12] hasSctp false
-par DummyScenario.car[12] nodeType "\"UE\""
-par DummyScenario.car[12] masterId 0
-par DummyScenario.car[12] macNodeId 1037
-par DummyScenario.car[12] macCellId 0
-par DummyScenario.car[12] nicType "\"NRNicUe\""
-par DummyScenario.car[12] hasIpv4 true
-par DummyScenario.car[12] hasIpv6 false
-par DummyScenario.car[12] numEthInterfaces 0
-par DummyScenario.car[12] extHostAddress "\"\""
-par DummyScenario.car[12] numLoInterfaces 1
-par DummyScenario.car[12] numPcapRecorders 0
-par DummyScenario.car[12] hasRNISupport false
-par DummyScenario.car[12] nrMasterId 1
-par DummyScenario.car[12] nrMacNodeId 2061
-par DummyScenario.car[12] nrMacCellId 1
 par DummyScenario typename "\"syntetictracegenerator.simulations.Villarosa_gnb_only.DummyScenario\""
 par DummyScenario playgroundSizeX 20000m
 attr unit m

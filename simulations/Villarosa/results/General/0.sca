@@ -1,8 +1,8 @@
 version 3
-run General-0-20220225-11:17:41-586404
+run General-0-20220503-15:55:46-41608
 attr configname General
-attr datetime 20220225-11:17:41
-attr datetimef 20220225-111741
+attr datetime 20220503-15:55:46
+attr datetimef 20220503-155546
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,13 +10,13 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network syntetictracegenerator.simulations.Villarosa.DummyScenario
-attr processid 586404
+attr processid 41608
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
-config image-path ../../images:../../../inet4.3/images:../../../Simu5G/images:../../../veins/subprojects/veins_inet/images:../../../veins/images
+config image-path ../../images:../../../../../neworkspace/inet4.3/images:../../../../Simu5G/images:../../../../../workspace/veins/subprojects/veins_inet/images:../../../../../workspace/veins/images
 config cmdenv-express-mode true
 config cmdenv-autoflush true
 config image-path ../../images
@@ -34,6 +34,7 @@ config **.vector-recording false
 config *.playgroundSizeX 20000m
 config *.playgroundSizeY 20000m
 config *.playgroundSizeZ 50m
+config *.configurator.config "xmldoc(\"./demo.xml\")"
 config *.veinsManager.host "\"localhost\""
 config *.veinsManager.moduleType "\"simu5g.nodes.cars.NRCar\""
 config *.veinsManager.moduleName "\"car\""
@@ -82,8 +83,8 @@ config *.car[*].app[0].typename DeviceApp
 config *.car[*].app[0].localPort 4500
 config *.car[*].app[0].UALCMPAddress "\"ualcmp\""
 config *.car[*].app[0].UALCMPPort 1000
-config *.car[*].app[0].appPackageSource "\"ApplicationDescriptors/WarningAlertApp.json\""
-config *.car[*].app[1].typename UEWarningAlertApp
+config *.car[*].app[0].appPackageSource "\"ApplicationDescriptors/PingPongApp.json\""
+config *.car[*].app[1].typename UEPingPongApp
 config *.car[*].app[1].deviceAppAddress "\"car[\"+string(ancestorIndex(1))+\"]\""
 config *.car[*].app[1].deviceAppPort 4500
 config *.car[*].app[1].startTime 1s
@@ -108,5 +109,4 @@ config *.mecHost.mecPlatform.serviceRegistry.rng-1 1
 config **.gNodeB*.mecHost "\"mecHost\""
 config *.mecHost.mecPlatformManager.mecOrchestrator "\"mecOrchestrator\""
 config **.mecOrchestrator.mecHostList "\"mecHost\""
-
 

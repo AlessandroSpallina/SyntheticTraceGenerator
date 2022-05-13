@@ -1,0 +1,23 @@
+{
+"appDid" : "PPMECAPP",
+"appName" : "MECPingPongApp",
+"appProvider" : "syntetictracegenerator.apps.PingPong.MECPingPongApp",
+"appInfoName" : "appInfoName_",
+"appDescription" : "appDescription_",
+"virtualComputeDescriptor" :{
+    "virtualDisk": 10,
+    "virtualCpu" : 1500,
+    "virtualMemory":10
+    },
+"appServiceRequired": [
+    {
+        "ServiceDependency" :{
+            "serName" : "LocationService",
+            "version" : "v2",
+            "serCategory": "Location"
+        }
+    }
+],
+
+"omnetppServiceRequired": "PPPingPongService"
+}

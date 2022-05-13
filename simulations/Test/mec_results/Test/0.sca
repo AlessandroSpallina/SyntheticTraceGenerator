@@ -1,23 +1,23 @@
 version 3
-run Test-0-20220330-09:43:16-695896
+run Test-0-20220426-17:46:03-35173
 attr configname Test
-attr datetime 20220330-09:43:16
-attr datetimef 20220330-094316
+attr datetime 20220426-17:46:03
+attr datetimef 20220426-174603
 attr experiment Test
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
-attr network syntetictracegenerator.simulations.Villarosa_edge.singleMecHost
-attr processid 695896
+attr network syntetictracegenerator.simulations.Test.singleMecHost
+attr processid 35173
 attr repetition 0
 attr replication #0
 attr resultdir mec_results
 attr runnumber 0
 attr seedset 0
 config image-path ../../images:../../../../../neworkspace/inet4.3/images:../../../../Simu5G/images:../../../../../workspace/veins/subprojects/veins_inet/images:../../../../../workspace/veins/images
-config network syntetictracegenerator.simulations.Villarosa_edge.singleMecHost
+config network syntetictracegenerator.simulations.Test.singleMecHost
 config *.mecHost.mecPlatformManager.mecOrchestrator "\"mecOrchestrator\""
 config **.mecOrchestrator.mecHostList "\"mecHost\""
 config image-path ../../../images
@@ -53,24 +53,15 @@ config *.gNodeB1.cellularNic.numCarriers 1
 config *.gNodeB1.cellularNic.channelModel[0].componentCarrierIndex 0
 config *.car[*].cellularNic.numCarriers 1
 config *.car[*].cellularNic.nrChannelModel[0].componentCarrierIndex 0
-config **.mobility.constraintAreaMinZ 0m
-config **.mobility.constraintAreaMaxZ 0m
-config *.car[*].mobility.initFromDisplayString false
-config *.car[*].mobilityType "\"LinearMobility\""
-config *.car[*].mobility.updateInterval 0.05s
-config *.gNodeB1.mobility.initFromDisplayString true
-config **.car[0].mobility.initialX 180m
-config **.car[0].mobility.initialY 50m
-config **.car[0].mobility.initialMovementHeading 90deg
-config **.car[0].mobility.speed 10mps
-config **.car[1].mobility.initialX 180m
-config **.car[1].mobility.initialY 100m
-config **.car[1].mobility.initialMovementHeading 90deg
-config **.car[1].mobility.speed 10mps
-config **.car[2].mobility.initialX 180m
-config **.car[2].mobility.initialY 150m
-config **.car[2].mobility.initialMovementHeading 90deg
-config **.car[2].mobility.speed 10mps
+config *.veinsManager.host "\"localhost\""
+config *.veinsManager.moduleType "\"simu5g.nodes.cars.NRCar\""
+config *.veinsManager.moduleName "\"car\""
+config *.veinsManager.launchConfig "xmldoc(\"heterogeneous.launchd.xml\")"
+config *.veinsManager.updateInterval 0.1s
+config *.car[*].mobilityType "\"VeinsInetMobility\""
+config **.numBands 25
+config **.ueTxPower 26
+config **.eNodeBTxPower 46
 config *.car[*].cellularNic.nrPhy.dynamicCellAssociation true
 config *.car[*].masterId 0
 config *.car[*].macCellId 0
@@ -83,6 +74,7 @@ config **.gNodeB2.macNodeId 2
 config *.car[*].cellularNic.nrPhy.enableHandover true
 config *.gNodeB*.cellularNic.phy.enableHandover true
 config *.gNodeB*.cellularNic.phy.handoverLatency 50ms
+config *.gNodeB*.cellInfo.broadcastMessageInterval 1s
 config *.gNodeB*.numX2Apps 1
 config *.gNodeB*.x2App[*].server.localPort "5000 + ancestorIndex(1)"
 config *.gNodeB1.x2App[0].client.connectAddress "\"gNodeB2%x2ppp0\""
@@ -125,4 +117,5 @@ config *.mecHost.mecPlatform.serviceRegistry.localPort 10021
 config *.mecHost.mecPlatform.serviceRegistry.rng-0 0
 config *.mecHost.mecPlatform.serviceRegistry.rng-1 1
 config **.gNodeB*.mecHost "\"mecHost\""
+
 

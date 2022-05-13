@@ -1,0 +1,6 @@
+[2022-05-03 17:09:10.220] [ueLogger5] [info] @ Lambda=3
+[2022-05-03 17:09:10.220] [ueLogger4] [info] @ Lambda=3
+[2022-05-03 17:09:10.220] [ueLogger3] [info] @ Lambda=3
+[2022-05-03 17:10:15.292] [ueLogger5] [info] handleMessage: received selfStart; isSelf? true
+[2022-05-03 17:10:15.292] [ueLogger4] [info] handleMessage: received selfStart; isSelf? true
+[2022-05-03 17:10:15.292] [ueLogger3] [info] handleMessage: received selfStart; isSelf? true

@@ -7,7 +7,7 @@
 // and cannot be removed from it.
 //
 
-package syntetictracegenerator.simulations.Villarosa_edge;
+package syntetictracegenerator.simulations.Test;
 
 import inet.networklayer.configurator.ipv4.Ipv4NetworkConfigurator;
 import inet.networklayer.ipv4.RoutingTableRecorder;
@@ -22,6 +22,8 @@ import simu5g.nodes.mec.MECHost;
 
 import simu5g.nodes.mec.MECOrchestrator.MecOrchestrator;
 import simu5g.nodes.mec.UALCMP.UALCMP;
+
+import org.car2x.veins.subprojects.veins_inet.VeinsInetManager;
 
 
 
@@ -44,6 +46,9 @@ network singleMecHost
         configurator: Ipv4NetworkConfigurator {
             @display("p=690,184.92");
         }
+        veinsManager: VeinsInetManager {
+            @display("p=50,227;is=s");
+        }
         channelControl: LteChannelControl {
             @display("p=690,24.84;is=s");
         }
@@ -61,9 +66,6 @@ network singleMecHost
         }
         gNodeB2: gNodeB {
             @display("p=141.575,677.5375;is=vl");
-        }
-        car[numCars]: NRUe {
-            @display("p=301.3525,439.89374");
         }
         //# MEC module
         mecHost: MECHost {
